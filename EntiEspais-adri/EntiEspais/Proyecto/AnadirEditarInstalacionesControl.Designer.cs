@@ -91,25 +91,27 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonDesar = new System.Windows.Forms.Button();
             this.labelEditarInstallacions = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxNom
             // 
             this.textBoxNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
-            this.textBoxNom.Location = new System.Drawing.Point(187, 50);
-            this.textBoxNom.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNom.Location = new System.Drawing.Point(119, 18);
+            this.textBoxNom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(386, 33);
+            this.textBoxNom.Size = new System.Drawing.Size(513, 40);
             this.textBoxNom.TabIndex = 0;
             this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
             // 
             // textBoxDireccio
             // 
             this.textBoxDireccio.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
-            this.textBoxDireccio.Location = new System.Drawing.Point(187, 98);
-            this.textBoxDireccio.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDireccio.Location = new System.Drawing.Point(119, 77);
+            this.textBoxDireccio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDireccio.Name = "textBoxDireccio";
-            this.textBoxDireccio.Size = new System.Drawing.Size(386, 33);
+            this.textBoxDireccio.Size = new System.Drawing.Size(513, 40);
             this.textBoxDireccio.TabIndex = 1;
             this.textBoxDireccio.TextChanged += new System.EventHandler(this.textBoxDireccio_TextChanged);
             // 
@@ -119,10 +121,10 @@
             this.checkBoxGestio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxGestio.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.checkBoxGestio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBoxGestio.Location = new System.Drawing.Point(219, 151);
-            this.checkBoxGestio.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxGestio.Location = new System.Drawing.Point(162, 142);
+            this.checkBoxGestio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxGestio.Name = "checkBoxGestio";
-            this.checkBoxGestio.Size = new System.Drawing.Size(322, 33);
+            this.checkBoxGestio.Size = new System.Drawing.Size(391, 37);
             this.checkBoxGestio.TabIndex = 2;
             this.checkBoxGestio.Text = "Gestionat per el ajuntament";
             this.checkBoxGestio.UseVisualStyleBackColor = true;
@@ -133,10 +135,9 @@
             this.labelHoraris.AutoSize = true;
             this.labelHoraris.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Bold);
             this.labelHoraris.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelHoraris.Location = new System.Drawing.Point(140, 205);
-            this.labelHoraris.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHoraris.Location = new System.Drawing.Point(57, 208);
             this.labelHoraris.Name = "labelHoraris";
-            this.labelHoraris.Size = new System.Drawing.Size(105, 29);
+            this.labelHoraris.Size = new System.Drawing.Size(126, 33);
             this.labelHoraris.TabIndex = 3;
             this.labelHoraris.Text = "Horaris:";
             // 
@@ -145,10 +146,9 @@
             this.labelDilluns.AutoSize = true;
             this.labelDilluns.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDilluns.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDilluns.Location = new System.Drawing.Point(182, 259);
-            this.labelDilluns.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDilluns.Location = new System.Drawing.Point(113, 275);
             this.labelDilluns.Name = "labelDilluns";
-            this.labelDilluns.Size = new System.Drawing.Size(86, 29);
+            this.labelDilluns.Size = new System.Drawing.Size(104, 33);
             this.labelDilluns.TabIndex = 4;
             this.labelDilluns.Text = "Dilluns";
             // 
@@ -157,10 +157,9 @@
             this.labelDimarts.AutoSize = true;
             this.labelDimarts.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDimarts.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDimarts.Location = new System.Drawing.Point(182, 289);
-            this.labelDimarts.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDimarts.Location = new System.Drawing.Point(113, 312);
             this.labelDimarts.Name = "labelDimarts";
-            this.labelDimarts.Size = new System.Drawing.Size(95, 29);
+            this.labelDimarts.Size = new System.Drawing.Size(117, 33);
             this.labelDimarts.TabIndex = 5;
             this.labelDimarts.Text = "Dimarts";
             // 
@@ -169,10 +168,9 @@
             this.labelDimecres.AutoSize = true;
             this.labelDimecres.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDimecres.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDimecres.Location = new System.Drawing.Point(182, 316);
-            this.labelDimecres.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDimecres.Location = new System.Drawing.Point(113, 345);
             this.labelDimecres.Name = "labelDimecres";
-            this.labelDimecres.Size = new System.Drawing.Size(116, 29);
+            this.labelDimecres.Size = new System.Drawing.Size(140, 33);
             this.labelDimecres.TabIndex = 6;
             this.labelDimecres.Text = "Dimecres";
             // 
@@ -181,10 +179,9 @@
             this.labelDijous.AutoSize = true;
             this.labelDijous.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDijous.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDijous.Location = new System.Drawing.Point(182, 344);
-            this.labelDijous.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDijous.Location = new System.Drawing.Point(113, 379);
             this.labelDijous.Name = "labelDijous";
-            this.labelDijous.Size = new System.Drawing.Size(81, 29);
+            this.labelDijous.Size = new System.Drawing.Size(97, 33);
             this.labelDijous.TabIndex = 7;
             this.labelDijous.Text = "Dijous";
             // 
@@ -193,10 +190,9 @@
             this.labelDivendres.AutoSize = true;
             this.labelDivendres.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDivendres.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDivendres.Location = new System.Drawing.Point(182, 371);
-            this.labelDivendres.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDivendres.Location = new System.Drawing.Point(113, 413);
             this.labelDivendres.Name = "labelDivendres";
-            this.labelDivendres.Size = new System.Drawing.Size(122, 29);
+            this.labelDivendres.Size = new System.Drawing.Size(147, 33);
             this.labelDivendres.TabIndex = 8;
             this.labelDivendres.Text = "Divendres";
             // 
@@ -205,10 +201,9 @@
             this.labelDissabte.AutoSize = true;
             this.labelDissabte.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDissabte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDissabte.Location = new System.Drawing.Point(182, 399);
-            this.labelDissabte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDissabte.Location = new System.Drawing.Point(113, 447);
             this.labelDissabte.Name = "labelDissabte";
-            this.labelDissabte.Size = new System.Drawing.Size(107, 29);
+            this.labelDissabte.Size = new System.Drawing.Size(129, 33);
             this.labelDissabte.TabIndex = 9;
             this.labelDissabte.Text = "Dissabte";
             // 
@@ -217,10 +212,9 @@
             this.labelDiumenje.AutoSize = true;
             this.labelDiumenje.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.labelDiumenje.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDiumenje.Location = new System.Drawing.Point(182, 427);
-            this.labelDiumenje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDiumenje.Location = new System.Drawing.Point(113, 482);
             this.labelDiumenje.Name = "labelDiumenje";
-            this.labelDiumenje.Size = new System.Drawing.Size(116, 29);
+            this.labelDiumenje.Size = new System.Drawing.Size(139, 33);
             this.labelDiumenje.TabIndex = 10;
             this.labelDiumenje.Text = "Diumenje";
             // 
@@ -254,10 +248,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDilluns.Location = new System.Drawing.Point(325, 259);
-            this.comboBoxHoraMatiIniciDilluns.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDilluns.Location = new System.Drawing.Point(303, 275);
+            this.comboBoxHoraMatiIniciDilluns.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDilluns.Name = "comboBoxHoraMatiIniciDilluns";
-            this.comboBoxHoraMatiIniciDilluns.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDilluns.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDilluns.TabIndex = 11;
             this.comboBoxHoraMatiIniciDilluns.SelectedIndexChanged += new System.EventHandler(this.comboBoxHoraMatiIniciDilluns_SelectedIndexChanged);
             // 
@@ -266,10 +260,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(450, 255);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(470, 270);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 29);
+            this.label1.Size = new System.Drawing.Size(25, 33);
             this.label1.TabIndex = 12;
             this.label1.Text = "-";
             // 
@@ -283,10 +276,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHorariMatiTancarDilluns.Location = new System.Drawing.Point(399, 259);
-            this.comboBoxHorariMatiTancarDilluns.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHorariMatiTancarDilluns.Location = new System.Drawing.Point(402, 275);
+            this.comboBoxHorariMatiTancarDilluns.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHorariMatiTancarDilluns.Name = "comboBoxHorariMatiTancarDilluns";
-            this.comboBoxHorariMatiTancarDilluns.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHorariMatiTancarDilluns.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHorariMatiTancarDilluns.TabIndex = 13;
             // 
             // label2
@@ -294,10 +287,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(376, 255);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(371, 270);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 29);
+            this.label2.Size = new System.Drawing.Size(23, 33);
             this.label2.TabIndex = 14;
             this.label2.Text = ":";
             // 
@@ -306,10 +298,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(521, 255);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(565, 270);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 29);
+            this.label3.Size = new System.Drawing.Size(23, 33);
             this.label3.TabIndex = 17;
             this.label3.Text = ":";
             // 
@@ -323,10 +314,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHorariTardaTancarDilluns.Location = new System.Drawing.Point(545, 259);
-            this.comboBoxHorariTardaTancarDilluns.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHorariTardaTancarDilluns.Location = new System.Drawing.Point(597, 275);
+            this.comboBoxHorariTardaTancarDilluns.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHorariTardaTancarDilluns.Name = "comboBoxHorariTardaTancarDilluns";
-            this.comboBoxHorariTardaTancarDilluns.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHorariTardaTancarDilluns.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHorariTardaTancarDilluns.TabIndex = 16;
             // 
             // comboBoxHoraTardaiIniciDilluns
@@ -359,10 +350,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaiIniciDilluns.Location = new System.Drawing.Point(470, 259);
-            this.comboBoxHoraTardaiIniciDilluns.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaiIniciDilluns.Location = new System.Drawing.Point(497, 275);
+            this.comboBoxHoraTardaiIniciDilluns.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaiIniciDilluns.Name = "comboBoxHoraTardaiIniciDilluns";
-            this.comboBoxHoraTardaiIniciDilluns.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaiIniciDilluns.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaiIniciDilluns.TabIndex = 15;
             // 
             // label4
@@ -370,10 +361,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(521, 285);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(565, 307);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 29);
+            this.label4.Size = new System.Drawing.Size(23, 33);
             this.label4.TabIndex = 24;
             this.label4.Text = ":";
             // 
@@ -387,10 +377,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraTardaTancarDimarts.Location = new System.Drawing.Point(545, 289);
-            this.comboBoxHoraTardaTancarDimarts.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaTancarDimarts.Location = new System.Drawing.Point(597, 312);
+            this.comboBoxHoraTardaTancarDimarts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaTancarDimarts.Name = "comboBoxHoraTardaTancarDimarts";
-            this.comboBoxHoraTardaTancarDimarts.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaTancarDimarts.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaTancarDimarts.TabIndex = 23;
             // 
             // comboBoxHoraTardaIniciDimarts
@@ -423,10 +413,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaIniciDimarts.Location = new System.Drawing.Point(470, 289);
-            this.comboBoxHoraTardaIniciDimarts.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaIniciDimarts.Location = new System.Drawing.Point(497, 312);
+            this.comboBoxHoraTardaIniciDimarts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaIniciDimarts.Name = "comboBoxHoraTardaIniciDimarts";
-            this.comboBoxHoraTardaIniciDimarts.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaIniciDimarts.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaIniciDimarts.TabIndex = 22;
             // 
             // label5
@@ -434,10 +424,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(376, 285);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(371, 307);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 29);
+            this.label5.Size = new System.Drawing.Size(23, 33);
             this.label5.TabIndex = 21;
             this.label5.Text = ":";
             // 
@@ -451,10 +440,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraMatiTancarDimarts.Location = new System.Drawing.Point(399, 289);
-            this.comboBoxHoraMatiTancarDimarts.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiTancarDimarts.Location = new System.Drawing.Point(402, 312);
+            this.comboBoxHoraMatiTancarDimarts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiTancarDimarts.Name = "comboBoxHoraMatiTancarDimarts";
-            this.comboBoxHoraMatiTancarDimarts.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiTancarDimarts.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiTancarDimarts.TabIndex = 20;
             // 
             // label6
@@ -462,10 +451,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(450, 285);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(470, 307);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 29);
+            this.label6.Size = new System.Drawing.Size(25, 33);
             this.label6.TabIndex = 19;
             this.label6.Text = "-";
             // 
@@ -499,10 +487,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDimarts.Location = new System.Drawing.Point(325, 289);
-            this.comboBoxHoraMatiIniciDimarts.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDimarts.Location = new System.Drawing.Point(303, 312);
+            this.comboBoxHoraMatiIniciDimarts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDimarts.Name = "comboBoxHoraMatiIniciDimarts";
-            this.comboBoxHoraMatiIniciDimarts.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDimarts.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDimarts.TabIndex = 18;
             // 
             // label7
@@ -510,10 +498,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(521, 312);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(565, 341);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 29);
+            this.label7.Size = new System.Drawing.Size(23, 33);
             this.label7.TabIndex = 31;
             this.label7.Text = ":";
             // 
@@ -527,10 +514,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraTardaTancarDimecres.Location = new System.Drawing.Point(545, 316);
-            this.comboBoxHoraTardaTancarDimecres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaTancarDimecres.Location = new System.Drawing.Point(597, 345);
+            this.comboBoxHoraTardaTancarDimecres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaTancarDimecres.Name = "comboBoxHoraTardaTancarDimecres";
-            this.comboBoxHoraTardaTancarDimecres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaTancarDimecres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaTancarDimecres.TabIndex = 30;
             // 
             // comboBoxHoraTardaIniciDimecres
@@ -563,10 +550,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaIniciDimecres.Location = new System.Drawing.Point(470, 316);
-            this.comboBoxHoraTardaIniciDimecres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaIniciDimecres.Location = new System.Drawing.Point(497, 345);
+            this.comboBoxHoraTardaIniciDimecres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaIniciDimecres.Name = "comboBoxHoraTardaIniciDimecres";
-            this.comboBoxHoraTardaIniciDimecres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaIniciDimecres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaIniciDimecres.TabIndex = 29;
             // 
             // label8
@@ -574,10 +561,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(376, 312);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(371, 340);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 29);
+            this.label8.Size = new System.Drawing.Size(23, 33);
             this.label8.TabIndex = 28;
             this.label8.Text = ":";
             // 
@@ -591,10 +577,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraMatiTancarDimecres.Location = new System.Drawing.Point(399, 316);
-            this.comboBoxHoraMatiTancarDimecres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiTancarDimecres.Location = new System.Drawing.Point(402, 345);
+            this.comboBoxHoraMatiTancarDimecres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiTancarDimecres.Name = "comboBoxHoraMatiTancarDimecres";
-            this.comboBoxHoraMatiTancarDimecres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiTancarDimecres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiTancarDimecres.TabIndex = 27;
             // 
             // label9
@@ -602,10 +588,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(450, 312);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(470, 340);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(21, 29);
+            this.label9.Size = new System.Drawing.Size(25, 33);
             this.label9.TabIndex = 26;
             this.label9.Text = "-";
             // 
@@ -639,10 +624,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDimecres.Location = new System.Drawing.Point(325, 316);
-            this.comboBoxHoraMatiIniciDimecres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDimecres.Location = new System.Drawing.Point(303, 345);
+            this.comboBoxHoraMatiIniciDimecres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDimecres.Name = "comboBoxHoraMatiIniciDimecres";
-            this.comboBoxHoraMatiIniciDimecres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDimecres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDimecres.TabIndex = 25;
             // 
             // label10
@@ -650,10 +635,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(521, 340);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(565, 374);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 29);
+            this.label10.Size = new System.Drawing.Size(23, 33);
             this.label10.TabIndex = 38;
             this.label10.Text = ":";
             // 
@@ -667,10 +651,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraTardaTancarDijous.Location = new System.Drawing.Point(545, 344);
-            this.comboBoxHoraTardaTancarDijous.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaTancarDijous.Location = new System.Drawing.Point(597, 379);
+            this.comboBoxHoraTardaTancarDijous.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaTancarDijous.Name = "comboBoxHoraTardaTancarDijous";
-            this.comboBoxHoraTardaTancarDijous.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaTancarDijous.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaTancarDijous.TabIndex = 37;
             // 
             // comboBoxHoraTardaIniciDijous
@@ -703,10 +687,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaIniciDijous.Location = new System.Drawing.Point(470, 344);
-            this.comboBoxHoraTardaIniciDijous.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaIniciDijous.Location = new System.Drawing.Point(497, 379);
+            this.comboBoxHoraTardaIniciDijous.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaIniciDijous.Name = "comboBoxHoraTardaIniciDijous";
-            this.comboBoxHoraTardaIniciDijous.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaIniciDijous.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaIniciDijous.TabIndex = 36;
             // 
             // label11
@@ -714,10 +698,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(376, 340);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(371, 374);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 29);
+            this.label11.Size = new System.Drawing.Size(23, 33);
             this.label11.TabIndex = 35;
             this.label11.Text = ":";
             // 
@@ -731,10 +714,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraMatiTancarDijous.Location = new System.Drawing.Point(399, 344);
-            this.comboBoxHoraMatiTancarDijous.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiTancarDijous.Location = new System.Drawing.Point(402, 379);
+            this.comboBoxHoraMatiTancarDijous.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiTancarDijous.Name = "comboBoxHoraMatiTancarDijous";
-            this.comboBoxHoraMatiTancarDijous.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiTancarDijous.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiTancarDijous.TabIndex = 34;
             // 
             // label12
@@ -742,10 +725,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Location = new System.Drawing.Point(450, 340);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(470, 374);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(21, 29);
+            this.label12.Size = new System.Drawing.Size(25, 33);
             this.label12.TabIndex = 33;
             this.label12.Text = "-";
             // 
@@ -779,10 +761,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDijous.Location = new System.Drawing.Point(325, 344);
-            this.comboBoxHoraMatiIniciDijous.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDijous.Location = new System.Drawing.Point(303, 379);
+            this.comboBoxHoraMatiIniciDijous.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDijous.Name = "comboBoxHoraMatiIniciDijous";
-            this.comboBoxHoraMatiIniciDijous.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDijous.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDijous.TabIndex = 32;
             // 
             // label13
@@ -790,10 +772,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(521, 367);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(565, 408);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(19, 29);
+            this.label13.Size = new System.Drawing.Size(23, 33);
             this.label13.TabIndex = 45;
             this.label13.Text = ":";
             // 
@@ -807,10 +788,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraTardaTancarDivendres.Location = new System.Drawing.Point(545, 371);
-            this.comboBoxHoraTardaTancarDivendres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaTancarDivendres.Location = new System.Drawing.Point(597, 413);
+            this.comboBoxHoraTardaTancarDivendres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaTancarDivendres.Name = "comboBoxHoraTardaTancarDivendres";
-            this.comboBoxHoraTardaTancarDivendres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaTancarDivendres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaTancarDivendres.TabIndex = 44;
             // 
             // comboBoxHoraTardaIniciDivendres
@@ -843,10 +824,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaIniciDivendres.Location = new System.Drawing.Point(470, 371);
-            this.comboBoxHoraTardaIniciDivendres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaIniciDivendres.Location = new System.Drawing.Point(497, 413);
+            this.comboBoxHoraTardaIniciDivendres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaIniciDivendres.Name = "comboBoxHoraTardaIniciDivendres";
-            this.comboBoxHoraTardaIniciDivendres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaIniciDivendres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaIniciDivendres.TabIndex = 43;
             // 
             // label14
@@ -854,10 +835,9 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Location = new System.Drawing.Point(376, 367);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(371, 408);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(19, 29);
+            this.label14.Size = new System.Drawing.Size(23, 33);
             this.label14.TabIndex = 42;
             this.label14.Text = ":";
             // 
@@ -871,10 +851,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraMatiTancarDivendres.Location = new System.Drawing.Point(399, 371);
-            this.comboBoxHoraMatiTancarDivendres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiTancarDivendres.Location = new System.Drawing.Point(402, 413);
+            this.comboBoxHoraMatiTancarDivendres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiTancarDivendres.Name = "comboBoxHoraMatiTancarDivendres";
-            this.comboBoxHoraMatiTancarDivendres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiTancarDivendres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiTancarDivendres.TabIndex = 41;
             // 
             // label15
@@ -882,10 +862,9 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label15.Location = new System.Drawing.Point(450, 367);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(470, 408);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(21, 29);
+            this.label15.Size = new System.Drawing.Size(25, 33);
             this.label15.TabIndex = 40;
             this.label15.Text = "-";
             // 
@@ -919,10 +898,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDivendres.Location = new System.Drawing.Point(325, 371);
-            this.comboBoxHoraMatiIniciDivendres.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDivendres.Location = new System.Drawing.Point(303, 413);
+            this.comboBoxHoraMatiIniciDivendres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDivendres.Name = "comboBoxHoraMatiIniciDivendres";
-            this.comboBoxHoraMatiIniciDivendres.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDivendres.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDivendres.TabIndex = 39;
             // 
             // label16
@@ -930,10 +909,9 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label16.Location = new System.Drawing.Point(521, 395);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(565, 442);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(19, 29);
+            this.label16.Size = new System.Drawing.Size(23, 33);
             this.label16.TabIndex = 52;
             this.label16.Text = ":";
             // 
@@ -947,10 +925,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraTardaTancarDissabte.Location = new System.Drawing.Point(545, 399);
-            this.comboBoxHoraTardaTancarDissabte.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaTancarDissabte.Location = new System.Drawing.Point(597, 447);
+            this.comboBoxHoraTardaTancarDissabte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaTancarDissabte.Name = "comboBoxHoraTardaTancarDissabte";
-            this.comboBoxHoraTardaTancarDissabte.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaTancarDissabte.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaTancarDissabte.TabIndex = 51;
             // 
             // comboBoxHoraTardaIniciDissabte
@@ -983,10 +961,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaIniciDissabte.Location = new System.Drawing.Point(470, 399);
-            this.comboBoxHoraTardaIniciDissabte.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaIniciDissabte.Location = new System.Drawing.Point(497, 447);
+            this.comboBoxHoraTardaIniciDissabte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaIniciDissabte.Name = "comboBoxHoraTardaIniciDissabte";
-            this.comboBoxHoraTardaIniciDissabte.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaIniciDissabte.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaIniciDissabte.TabIndex = 50;
             // 
             // label17
@@ -994,10 +972,9 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label17.Location = new System.Drawing.Point(376, 395);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(371, 442);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 29);
+            this.label17.Size = new System.Drawing.Size(23, 33);
             this.label17.TabIndex = 49;
             this.label17.Text = ":";
             // 
@@ -1011,10 +988,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraMatiTancarDissabte.Location = new System.Drawing.Point(399, 399);
-            this.comboBoxHoraMatiTancarDissabte.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiTancarDissabte.Location = new System.Drawing.Point(402, 447);
+            this.comboBoxHoraMatiTancarDissabte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiTancarDissabte.Name = "comboBoxHoraMatiTancarDissabte";
-            this.comboBoxHoraMatiTancarDissabte.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiTancarDissabte.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiTancarDissabte.TabIndex = 48;
             // 
             // label18
@@ -1022,10 +999,9 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label18.Location = new System.Drawing.Point(450, 395);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(470, 442);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(21, 29);
+            this.label18.Size = new System.Drawing.Size(25, 33);
             this.label18.TabIndex = 47;
             this.label18.Text = "-";
             // 
@@ -1059,10 +1035,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDissabte.Location = new System.Drawing.Point(325, 399);
-            this.comboBoxHoraMatiIniciDissabte.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDissabte.Location = new System.Drawing.Point(303, 447);
+            this.comboBoxHoraMatiIniciDissabte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDissabte.Name = "comboBoxHoraMatiIniciDissabte";
-            this.comboBoxHoraMatiIniciDissabte.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDissabte.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDissabte.TabIndex = 46;
             // 
             // label19
@@ -1070,10 +1046,9 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label19.Location = new System.Drawing.Point(521, 423);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(565, 477);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(19, 29);
+            this.label19.Size = new System.Drawing.Size(23, 33);
             this.label19.TabIndex = 59;
             this.label19.Text = ":";
             // 
@@ -1087,10 +1062,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraTardaTancarDiumenje.Location = new System.Drawing.Point(545, 427);
-            this.comboBoxHoraTardaTancarDiumenje.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaTancarDiumenje.Location = new System.Drawing.Point(597, 482);
+            this.comboBoxHoraTardaTancarDiumenje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaTancarDiumenje.Name = "comboBoxHoraTardaTancarDiumenje";
-            this.comboBoxHoraTardaTancarDiumenje.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaTancarDiumenje.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaTancarDiumenje.TabIndex = 58;
             // 
             // comboBoxHoraTardaIniciDiumenje
@@ -1123,10 +1098,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraTardaIniciDiumenje.Location = new System.Drawing.Point(470, 427);
-            this.comboBoxHoraTardaIniciDiumenje.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraTardaIniciDiumenje.Location = new System.Drawing.Point(497, 482);
+            this.comboBoxHoraTardaIniciDiumenje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraTardaIniciDiumenje.Name = "comboBoxHoraTardaIniciDiumenje";
-            this.comboBoxHoraTardaIniciDiumenje.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraTardaIniciDiumenje.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraTardaIniciDiumenje.TabIndex = 57;
             // 
             // label20
@@ -1134,10 +1109,9 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label20.Location = new System.Drawing.Point(376, 423);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(371, 477);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(19, 29);
+            this.label20.Size = new System.Drawing.Size(23, 33);
             this.label20.TabIndex = 56;
             this.label20.Text = ":";
             // 
@@ -1151,10 +1125,10 @@
             "15",
             "30",
             "45"});
-            this.comboBoxHoraMatiTancarDiumenje.Location = new System.Drawing.Point(399, 427);
-            this.comboBoxHoraMatiTancarDiumenje.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiTancarDiumenje.Location = new System.Drawing.Point(402, 482);
+            this.comboBoxHoraMatiTancarDiumenje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiTancarDiumenje.Name = "comboBoxHoraMatiTancarDiumenje";
-            this.comboBoxHoraMatiTancarDiumenje.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiTancarDiumenje.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiTancarDiumenje.TabIndex = 55;
             // 
             // label21
@@ -1162,10 +1136,9 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label21.Location = new System.Drawing.Point(450, 423);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(470, 477);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(21, 29);
+            this.label21.Size = new System.Drawing.Size(25, 33);
             this.label21.TabIndex = 54;
             this.label21.Text = "-";
             // 
@@ -1199,10 +1172,10 @@
             "21",
             "22",
             "23"});
-            this.comboBoxHoraMatiIniciDiumenje.Location = new System.Drawing.Point(325, 427);
-            this.comboBoxHoraMatiIniciDiumenje.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxHoraMatiIniciDiumenje.Location = new System.Drawing.Point(303, 482);
+            this.comboBoxHoraMatiIniciDiumenje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxHoraMatiIniciDiumenje.Name = "comboBoxHoraMatiIniciDiumenje";
-            this.comboBoxHoraMatiIniciDiumenje.Size = new System.Drawing.Size(48, 24);
+            this.comboBoxHoraMatiIniciDiumenje.Size = new System.Drawing.Size(63, 28);
             this.comboBoxHoraMatiIniciDiumenje.TabIndex = 53;
             // 
             // buttonCancelar
@@ -1213,10 +1186,10 @@
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
-            this.buttonCancelar.Location = new System.Drawing.Point(250, 494);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
+            this.buttonCancelar.Location = new System.Drawing.Point(251, 618);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(157, 41);
+            this.buttonCancelar.Size = new System.Drawing.Size(209, 50);
             this.buttonCancelar.TabIndex = 61;
             this.buttonCancelar.Text = "Cancel·lar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
@@ -1229,10 +1202,10 @@
             this.buttonDesar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonDesar.ForeColor = System.Drawing.Color.White;
-            this.buttonDesar.Location = new System.Drawing.Point(436, 494);
-            this.buttonDesar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
+            this.buttonDesar.Location = new System.Drawing.Point(499, 618);
+            this.buttonDesar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonDesar.Name = "buttonDesar";
-            this.buttonDesar.Size = new System.Drawing.Size(157, 41);
+            this.buttonDesar.Size = new System.Drawing.Size(209, 50);
             this.buttonDesar.TabIndex = 60;
             this.buttonDesar.Text = "Desar";
             this.buttonDesar.UseVisualStyleBackColor = false;
@@ -1242,85 +1215,95 @@
             this.labelEditarInstallacions.AutoSize = true;
             this.labelEditarInstallacions.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Bold);
             this.labelEditarInstallacions.ForeColor = System.Drawing.Color.White;
-            this.labelEditarInstallacions.Location = new System.Drawing.Point(2, 6);
-            this.labelEditarInstallacions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelEditarInstallacions.Location = new System.Drawing.Point(3, 7);
             this.labelEditarInstallacions.Name = "labelEditarInstallacions";
-            this.labelEditarInstallacions.Size = new System.Drawing.Size(234, 29);
+            this.labelEditarInstallacions.Size = new System.Drawing.Size(280, 33);
             this.labelEditarInstallacions.TabIndex = 129;
             this.labelEditarInstallacions.Text = "Editar installacions";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(171)))), ((int)(((byte)(164)))));
+            this.panel1.Controls.Add(this.comboBoxHoraMatiTancarDissabte);
+            this.panel1.Controls.Add(this.textBoxNom);
+            this.panel1.Controls.Add(this.textBoxDireccio);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiTancarDijous);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.checkBoxGestio);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaTancarDiumenje);
+            this.panel1.Controls.Add(this.labelHoraris);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaIniciDiumenje);
+            this.panel1.Controls.Add(this.labelDilluns);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.labelDimarts);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiTancarDiumenje);
+            this.panel1.Controls.Add(this.labelDimecres);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.labelDijous);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDiumenje);
+            this.panel1.Controls.Add(this.labelDivendres);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.labelDissabte);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaTancarDissabte);
+            this.panel1.Controls.Add(this.labelDiumenje);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaIniciDissabte);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDilluns);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.comboBoxHorariMatiTancarDilluns);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDissabte);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaiIniciDilluns);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.comboBoxHorariTardaTancarDilluns);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaTancarDivendres);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaIniciDivendres);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDimarts);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiTancarDivendres);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiTancarDimarts);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDivendres);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaIniciDimarts);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaTancarDimarts);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaTancarDijous);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaIniciDijous);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDimecres);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiTancarDimecres);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDijous);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaIniciDimecres);
+            this.panel1.Controls.Add(this.comboBoxHoraTardaTancarDimecres);
+            this.panel1.Location = new System.Drawing.Point(120, 56);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(712, 551);
+            this.panel1.TabIndex = 130;
+            // 
             // AnadirEditarInstalacionesControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
             this.Controls.Add(this.labelEditarInstallacions);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonDesar);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.comboBoxHoraTardaTancarDiumenje);
-            this.Controls.Add(this.comboBoxHoraTardaIniciDiumenje);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.comboBoxHoraMatiTancarDiumenje);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDiumenje);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.comboBoxHoraTardaTancarDissabte);
-            this.Controls.Add(this.comboBoxHoraTardaIniciDissabte);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.comboBoxHoraMatiTancarDissabte);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDissabte);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBoxHoraTardaTancarDivendres);
-            this.Controls.Add(this.comboBoxHoraTardaIniciDivendres);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.comboBoxHoraMatiTancarDivendres);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDivendres);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBoxHoraTardaTancarDijous);
-            this.Controls.Add(this.comboBoxHoraTardaIniciDijous);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBoxHoraMatiTancarDijous);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDijous);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBoxHoraTardaTancarDimecres);
-            this.Controls.Add(this.comboBoxHoraTardaIniciDimecres);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBoxHoraMatiTancarDimecres);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDimecres);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxHoraTardaTancarDimarts);
-            this.Controls.Add(this.comboBoxHoraTardaIniciDimarts);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBoxHoraMatiTancarDimarts);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDimarts);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBoxHorariTardaTancarDilluns);
-            this.Controls.Add(this.comboBoxHoraTardaiIniciDilluns);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBoxHorariMatiTancarDilluns);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBoxHoraMatiIniciDilluns);
-            this.Controls.Add(this.labelDiumenje);
-            this.Controls.Add(this.labelDissabte);
-            this.Controls.Add(this.labelDivendres);
-            this.Controls.Add(this.labelDijous);
-            this.Controls.Add(this.labelDimecres);
-            this.Controls.Add(this.labelDimarts);
-            this.Controls.Add(this.labelDilluns);
-            this.Controls.Add(this.labelHoraris);
-            this.Controls.Add(this.checkBoxGestio);
-            this.Controls.Add(this.textBoxDireccio);
-            this.Controls.Add(this.textBoxNom);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AnadirEditarInstalacionesControl";
-            this.Size = new System.Drawing.Size(734, 570);
+            this.Size = new System.Drawing.Size(979, 702);
             this.Load += new System.EventHandler(this.AnadirEditarInstalacionesControl_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1391,5 +1374,6 @@
         private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonDesar;
         private System.Windows.Forms.Label labelEditarInstallacions;
+        private System.Windows.Forms.Panel panel1;
     }
 }
