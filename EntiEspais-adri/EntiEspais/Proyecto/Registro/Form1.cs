@@ -10,32 +10,34 @@ using System.Windows.Forms;
 
 namespace EntiEspais
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class Registre : System.Windows.Forms.Form
     {
         // Atributs per a moure la finestra
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
-        private String nom = "Nom";
-        private String email = "Email";
-        private String contrassenya = "Contrassenya";
-        private String repetirContrassenya = "Repetir contrassenya";
 
-        public Form1()
+        // Atributs per als texts dels textviews
+        private String nom = "Nom";
+        private String email = "Adreça electrònica";
+        private String contrasenya = "Contrasenya";
+        private String repetirContrasenya = "Repetir contrasenya";
+
+        public Registre()
         {
             InitializeComponent();
 
             // Para quitar el fondo de los textBox
             textBoxNom.BackColor = this.BackColor;
-            textBoxEmail.BackColor = this.BackColor;
-            textBoxContrassenya.BackColor = this.BackColor;
+            textBoxAdrecaElect.BackColor = this.BackColor;
+            textBoxContrasenya.BackColor = this.BackColor;
             textBoxRepetirContrasenya.BackColor = this.BackColor;
 
             // Asignamos los textos por defecto de los textBox
             textBoxNom.Text = nom;
-            textBoxEmail.Text = email;
-            textBoxContrassenya.Text = contrassenya;
-            textBoxRepetirContrasenya.Text = repetirContrassenya;
+            textBoxAdrecaElect.Text = email;
+            textBoxContrasenya.Text = contrasenya;
+            textBoxRepetirContrasenya.Text = repetirContrasenya;
         }
 
         private void buttonCloseApp_Click(object sender, EventArgs e)
@@ -90,18 +92,18 @@ namespace EntiEspais
             g.DrawRectangle(p, rectTextBoxNom);
 
             // TextBox email
-            textBoxEmail.BorderStyle = BorderStyle.None;
-            Rectangle rectTextBoxEmail = new Rectangle(textBoxEmail.Location.X - variance/2, textBoxEmail.Location.Y - variance/2, textBoxEmail.Width + variance, textBoxEmail.Height + variance);
+            textBoxAdrecaElect.BorderStyle = BorderStyle.None;
+            Rectangle rectTextBoxEmail = new Rectangle(textBoxAdrecaElect.Location.X - variance/2, textBoxAdrecaElect.Location.Y - variance/2, textBoxAdrecaElect.Width + variance, textBoxAdrecaElect.Height + variance);
             g.DrawRectangle(p, rectTextBoxEmail);
 
-            // Textbox Contrassenya
-            textBoxContrassenya.BorderStyle = BorderStyle.None;
-            Rectangle rectTextBoxContrassenya = new Rectangle(textBoxContrassenya.Location.X - variance/2, textBoxContrassenya.Location.Y - variance/2, textBoxContrassenya.Width + variance, textBoxContrassenya.Height + variance);
+            // Textbox Contrassenya (Cojemos la altura y la anchura del textbox email (por el botón de mostrar contraseña))
+            textBoxContrasenya.BorderStyle = BorderStyle.None;
+            Rectangle rectTextBoxContrassenya = new Rectangle(textBoxContrasenya.Location.X - variance/2, textBoxContrasenya.Location.Y - variance/2, textBoxAdrecaElect.Width + variance, textBoxAdrecaElect.Height + variance);
             g.DrawRectangle(p, rectTextBoxContrassenya);
 
-            // TextBox Repetir Contrassenya
+            // TextBox Repetir Contrassenya (Cojemos la altura y la anchura del textbox email (por el botón de mostrar contraseña))
             textBoxRepetirContrasenya.BorderStyle = BorderStyle.None;
-            Rectangle rectTextBoxRepetirContrassenya = new Rectangle(textBoxRepetirContrasenya.Location.X - variance/2, textBoxRepetirContrasenya.Location.Y - variance/2, textBoxRepetirContrasenya.Width + variance, textBoxRepetirContrasenya.Height + variance);
+            Rectangle rectTextBoxRepetirContrassenya = new Rectangle(textBoxRepetirContrasenya.Location.X - variance/2, textBoxRepetirContrasenya.Location.Y - variance/2, textBoxAdrecaElect.Width + variance, textBoxAdrecaElect.Height + variance);
             g.DrawRectangle(p, rectTextBoxRepetirContrassenya);
         }
 
@@ -123,46 +125,78 @@ namespace EntiEspais
             }
         }
 
-        private void textBoxEmail_MouseClick(object sender, MouseEventArgs e)
+        private void textBoxAdrecaElect_MouseClick(object sender, MouseEventArgs e)
         {
             // Cuando hacemos click en el textBoxEmail y está el valor por defecto, se borra el texto por defecto
-            if (textBoxEmail.Text == email)
+            if (textBoxAdrecaElect.Text == email)
             {
-                textBoxEmail.Text = "";
+                textBoxAdrecaElect.Text = "";
             }
         }
 
-        private void textBoxEmail_Leave(object sender, EventArgs e)
+
+        private void textBoxContrasenya_TextChanged(object sender, EventArgs e)
         {
-            // Cuando no está el focus en el textboxEmail, si no se ha añadido ningún texto vuelve al texto por defecto
-            if (textBoxEmail.Text == "")
+            // Si cambia el texto del textbox contrasenya se muestra como carácteres "Seguros"
+            if ((textBoxContrasenya.Text != contrasenya) && (textBoxContrasenya.Text != null))
             {
-                textBoxEmail.Text = email;
+                textBoxContrasenya.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBoxContrasenya.UseSystemPasswordChar = false;
             }
         }
 
-        private void textBoxContrassenya_MouseClick(object sender, MouseEventArgs e)
+        private void textBoxContrasenya_MouseClick(object sender, MouseEventArgs e)
         {
             // Cuando hacemos click en el textBoxContrassenya y está el valor por defecto, se borra el texto por defecto
-            if (textBoxContrassenya.Text == contrassenya)
+            if (textBoxContrasenya.Text == contrasenya)
             {
-                textBoxContrassenya.Text = "";
+                textBoxContrasenya.Text = "";
             }
         }
 
-        private void textBoxContrassenya_Leave(object sender, EventArgs e)
+        private void textBoxAdrecaElect_Leave(object sender, EventArgs e)
+        {
+            // Cuando no está el focus en el textBoxEmail, si no se ha añadido ningún texto vuelve al texto por defecto
+            if (textBoxAdrecaElect.Text == "")
+            {
+                textBoxAdrecaElect.Text = email;
+            }
+        }
+
+        private void textBoxContrasenya_Leave(object sender, EventArgs e)
         {
             // Cuando no está el focus en el textBoxContrassenya, si no se ha añadido ningún texto vuelve al texto por defecto
-            if (textBoxContrassenya.Text == "")
+            if (textBoxContrasenya.Text == "")
             {
-                textBoxContrassenya.Text = contrassenya;
+                textBoxContrasenya.Text = contrasenya;
+            }
+        }
+
+        private void buttonMostrarContrassenya_MouseDown(object sender, MouseEventArgs e)
+        {
+            // Si se hace clik en mostrar pw, se muestra la pw
+            if (textBoxContrasenya.Text != contrasenya)
+            {
+                textBoxContrasenya.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void buttonMostrarContrassenya_MouseUp(object sender, MouseEventArgs e)
+        {
+            // Cuando se deja de pulsar el botón de mostrar pw se vuelve a "esconder" la pw
+            if (textBoxContrasenya.Text != contrasenya)
+            {
+                textBoxContrasenya.UseSystemPasswordChar = true;
             }
         }
 
         private void textBoxRepetirContrasenya_MouseClick(object sender, MouseEventArgs e)
         {
             // Cuando hacemos click en el textBoxRepetirContrasenya y está el valor por defecto, se borra el texto por defecto
-            if (textBoxRepetirContrasenya.Text == repetirContrassenya)
+            if (textBoxRepetirContrasenya.Text == repetirContrasenya)
             {
                 textBoxRepetirContrasenya.Text = "";
             }
@@ -173,40 +207,69 @@ namespace EntiEspais
             // Cuando no está el focus en el textBoxContrassenya, si no se ha añadido ningún texto vuelve al texto por defecto
             if (textBoxRepetirContrasenya.Text == "")
             {
-                textBoxRepetirContrasenya.Text = repetirContrassenya;
+                textBoxRepetirContrasenya.Text = repetirContrasenya;
+            }
+        }
+
+        private void textBoxRepetirContrasenya_TextChanged(object sender, EventArgs e)
+        {
+            // Si cambia el texto del textbox contrasenya se muestra como carácteres "Seguros"
+            if ((textBoxRepetirContrasenya.Text != repetirContrasenya) && (textBoxRepetirContrasenya.Text != null))
+            {
+                textBoxRepetirContrasenya.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBoxRepetirContrasenya.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void buttonMostrarContrassenyaRep_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (textBoxRepetirContrasenya.Text != repetirContrasenya)
+            {
+                textBoxRepetirContrasenya.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void buttonMostrarContrassenyaRep_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (textBoxRepetirContrasenya.Text != repetirContrasenya)
+            {
+                textBoxRepetirContrasenya.UseSystemPasswordChar = true;
             }
         }
 
         private void buttonRegistrarse_Click(object sender, EventArgs e)
         {
             // Comprobamos que el textBox Nom no está con el texto por defecto o null (por si acaso)
-            if(textBoxNom.Text != nom && textBoxNom.Text != "")
+            if (textBoxNom.Text != nom && textBoxNom.Text != "")
             {
                 // Comprobamos que el textBox email no está con el texto por defecto o null (por si acaso)
-                if (textBoxEmail.Text != email && textBoxEmail.Text != "")
+                if (textBoxAdrecaElect.Text != email && textBoxAdrecaElect.Text != "")
                 {
                     // Comprobamos que el email es válido
-                    if (textBoxEmail.Text.Contains("@") && textBoxEmail.Text.Contains("."))
+                    if (textBoxAdrecaElect.Text.Contains("@") && textBoxAdrecaElect.Text.Contains("."))
                     {
                         // Comprobamos que el textBox contrassenya no está con el texto por defecto o null (por si acaso)
-                        if (textBoxContrassenya.Text != contrassenya && textBoxContrassenya.Text != "")
+                        if (textBoxContrasenya.Text != contrasenya && textBoxContrasenya.Text != "")
                         {
                             // Comprobamos que el textBox contrassenya no está con el texto por defecto o null (por si acaso)
-                            if (textBoxRepetirContrasenya.Text != repetirContrassenya && textBoxRepetirContrasenya.Text != "")
+                            if (textBoxRepetirContrasenya.Text != repetirContrasenya && textBoxRepetirContrasenya.Text != "")
                             {
                                 // Comprobamos que las dos contraseñas coinciden
-                                if(textBoxContrassenya.Text == textBoxRepetirContrasenya.Text)
+                                if (textBoxContrasenya.Text == textBoxRepetirContrasenya.Text)
                                 {
                                     /*
                                      * 
                                      * AÑADIR FUNCIÓN PARA ABIR EL SIGUIENTE FORMULARIO
                                      * 
-                                     */ 
+                                     */
                                 }
                                 else
                                 {
                                     MessageBox.Show("Les contrassenyes no coincideixen", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    textBoxContrassenya.Focus();
+                                    textBoxContrasenya.Focus();
                                 }
                             }
                             else
@@ -218,28 +281,36 @@ namespace EntiEspais
                         else
                         {
                             MessageBox.Show("Introdueix una contrassenya vàlida", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            textBoxContrassenya.Focus();
+                            textBoxContrasenya.Focus();
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Introdueix un email vàlid", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        textBoxEmail.Focus();
+                        MessageBox.Show("Introdueix una adreça electrònica vàlida", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBoxAdrecaElect.Focus();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Introdueix un email", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBoxEmail.Focus();
+                    MessageBox.Show("Introdueix una adreça electrònica", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxAdrecaElect.Focus();
                 }
             }
             else
             {
-                MessageBox.Show("Introdueix un nom d'usuari", "Atenció", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Introdueix un nom d'usuari", "Atenció", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxNom.Focus();
             }
         }
+
+        private void buttonIniciarSessio_Click(object sender, EventArgs e)
+        {
+            // Obrim el formulari
+           // IniciarSesio a = new IniciarSesio();
+           // a.Show();
+
+            // Amaguem el formulari
+            this.Hide();
+        }        
     }
-
-
 }
