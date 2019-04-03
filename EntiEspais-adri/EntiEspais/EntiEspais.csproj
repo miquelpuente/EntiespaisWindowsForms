@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5130321D-5BB4-4772-9DEA-5D4F65709EA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EntiEspais</RootNamespace>
+    <AssemblyName>EntiEspais</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjudaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AjudaControl.Designer.cs">
+      <DependentUpon>AjudaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\ActivitatsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\ActivitatsControl.Designer.cs">
+      <DependentUpon>ActivitatsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\AnadirEditarInstalacionesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\AnadirEditarInstalacionesControl.Designer.cs">
+      <DependentUpon>AnadirEditarInstalacionesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\EditarActivitatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\EditarActivitatControl.Designer.cs">
+      <DependentUpon>EditarActivitatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\EditarAnadirEntitatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\EditarAnadirEntitatControl.Designer.cs">
+      <DependentUpon>EditarAnadirEntitatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\EditarPerfilControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\EditarPerfilControl.Designer.cs">
+      <DependentUpon>EditarPerfilControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\EntitatEquipsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\EntitatEquipsControl.Designer.cs">
+      <DependentUpon>EntitatEquipsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\EntitatsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\EntitatsControl.Designer.cs">
+      <DependentUpon>EntitatsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\ExportarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\ExportarControl.Designer.cs">
+      <DependentUpon>ExportarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\InstallacionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\InstallacionsControl.Designer.cs">
+      <DependentUpon>InstallacionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\InstallacionsEspaisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\InstallacionsEspaisControl.Designer.cs">
+      <DependentUpon>InstallacionsEspaisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyecto\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\PerfilControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\PerfilControl.Designer.cs">
+      <DependentUpon>PerfilControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\Plantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyecto\Plantilla.Designer.cs">
+      <DependentUpon>Plantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proyecto\SollicitudsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proyecto\SollicitudsControl.Designer.cs">
+      <DependentUpon>SollicitudsControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AjudaControl.resx">
+      <DependentUpon>AjudaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\ActivitatsControl.resx">
+      <DependentUpon>ActivitatsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\AnadirEditarInstalacionesControl.resx">
+      <DependentUpon>AnadirEditarInstalacionesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\EditarActivitatControl.resx">
+      <DependentUpon>EditarActivitatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\EditarAnadirEntitatControl.resx">
+      <DependentUpon>EditarAnadirEntitatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\EditarPerfilControl.resx">
+      <DependentUpon>EditarPerfilControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\EntitatEquipsControl.resx">
+      <DependentUpon>EntitatEquipsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\EntitatsControl.resx">
+      <DependentUpon>EntitatsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\ExportarControl.resx">
+      <DependentUpon>ExportarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\InstallacionsControl.resx">
+      <DependentUpon>InstallacionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\InstallacionsEspaisControl.resx">
+      <DependentUpon>InstallacionsEspaisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\PerfilControl.resx">
+      <DependentUpon>PerfilControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\Plantilla.resx">
+      <DependentUpon>Plantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Proyecto\SollicitudsControl.resx">
+      <DependentUpon>SollicitudsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\hide.png" />
+    <Content Include="Resources\logo.png" />
+    <None Include="Resources\ojo.png" />
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
