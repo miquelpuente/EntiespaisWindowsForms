@@ -290,7 +290,6 @@
             this.labelDiumenge.Size = new System.Drawing.Size(82, 20);
             this.labelDiumenge.TabIndex = 69;
             this.labelDiumenge.Text = "Diumenge";
-            this.labelDiumenge.Click += new System.EventHandler(this.labelDiumenje_Click);
             // 
             // label18
             // 
@@ -339,7 +338,6 @@
             this.labelDissabte.Size = new System.Drawing.Size(72, 20);
             this.labelDissabte.TabIndex = 68;
             this.labelDissabte.Text = "Dissabte";
-            this.labelDissabte.Click += new System.EventHandler(this.labelDissabte_Click);
             // 
             // labelDivendres
             // 
@@ -352,7 +350,6 @@
             this.labelDivendres.Size = new System.Drawing.Size(80, 20);
             this.labelDivendres.TabIndex = 67;
             this.labelDivendres.Text = "Divendres";
-            this.labelDivendres.Click += new System.EventHandler(this.labelDivendres_Click);
             // 
             // labelDijous
             // 
@@ -365,7 +362,6 @@
             this.labelDijous.Size = new System.Drawing.Size(53, 20);
             this.labelDijous.TabIndex = 66;
             this.labelDijous.Text = "Dijous";
-            this.labelDijous.Click += new System.EventHandler(this.labelDijous_Click);
             // 
             // labelDimecres
             // 
@@ -378,7 +374,6 @@
             this.labelDimecres.Size = new System.Drawing.Size(76, 20);
             this.labelDimecres.TabIndex = 65;
             this.labelDimecres.Text = "Dimecres";
-            this.labelDimecres.Click += new System.EventHandler(this.labelDimecres_Click);
             // 
             // labelDimarts
             // 
@@ -391,7 +386,6 @@
             this.labelDimarts.Size = new System.Drawing.Size(64, 20);
             this.labelDimarts.TabIndex = 64;
             this.labelDimarts.Text = "Dimarts";
-            this.labelDimarts.Click += new System.EventHandler(this.labelDimarts_Click);
             // 
             // label16
             // 
@@ -461,7 +455,6 @@
             this.comboBoxEspais.Name = "comboBoxEspais";
             this.comboBoxEspais.Size = new System.Drawing.Size(297, 21);
             this.comboBoxEspais.TabIndex = 122;
-            this.comboBoxEspais.SelectedIndexChanged += new System.EventHandler(this.comboBoxEspais_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -483,7 +476,6 @@
             this.comboBoxTipus.Name = "comboBoxTipus";
             this.comboBoxTipus.Size = new System.Drawing.Size(297, 21);
             this.comboBoxTipus.TabIndex = 121;
-            this.comboBoxTipus.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipus_SelectedIndexChanged);
             // 
             // labelTipus
             // 
@@ -496,7 +488,6 @@
             this.labelTipus.Size = new System.Drawing.Size(47, 20);
             this.labelTipus.TabIndex = 124;
             this.labelTipus.Text = "Tipus";
-            this.labelTipus.Click += new System.EventHandler(this.labelTipus_Click);
             // 
             // labelEspai
             // 
@@ -509,7 +500,6 @@
             this.labelEspai.Size = new System.Drawing.Size(49, 20);
             this.labelEspai.TabIndex = 125;
             this.labelEspai.Text = "Espai";
-            this.labelEspai.Click += new System.EventHandler(this.labelEspai_Click);
             // 
             // comboBoxEquips
             // 
@@ -519,7 +509,6 @@
             this.comboBoxEquips.Name = "comboBoxEquips";
             this.comboBoxEquips.Size = new System.Drawing.Size(297, 21);
             this.comboBoxEquips.TabIndex = 126;
-            this.comboBoxEquips.SelectedIndexChanged += new System.EventHandler(this.comboBoxEquips_SelectedIndexChanged);
             // 
             // labelEquip
             // 
@@ -532,7 +521,6 @@
             this.labelEquip.Size = new System.Drawing.Size(50, 20);
             this.labelEquip.TabIndex = 127;
             this.labelEquip.Text = "Equip";
-            this.labelEquip.Click += new System.EventHandler(this.labelEquip_Click);
             // 
             // labelEditarActivitat
             // 
@@ -545,7 +533,6 @@
             this.labelEditarActivitat.Size = new System.Drawing.Size(177, 29);
             this.labelEditarActivitat.TabIndex = 128;
             this.labelEditarActivitat.Text = "Editar activitat";
-            this.labelEditarActivitat.Click += new System.EventHandler(this.labelEditarActivitat_Click);
             // 
             // labelNomActivitat
             // 
@@ -632,7 +619,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(498, 438);
             this.panel1.TabIndex = 123;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // comboBoxHoraTardaTancarDiumenje
             // 
@@ -1377,6 +1363,7 @@
             this.buttonCancelar.TabIndex = 130;
             this.buttonCancelar.Text = "Cancel·lar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonDesar
             // 
