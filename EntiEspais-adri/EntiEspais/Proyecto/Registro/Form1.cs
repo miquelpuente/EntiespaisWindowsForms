@@ -306,8 +306,8 @@ namespace EntiEspais
         private void buttonIniciarSessio_Click(object sender, EventArgs e)
         {
             // Obrim el formulari
-           // IniciarSesio a = new IniciarSesio();
-           // a.Show();
+           IniciarSesio a = new IniciarSesio();
+           a.Show();
 
             // Amaguem el formulari
             this.Hide();

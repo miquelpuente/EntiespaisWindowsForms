@@ -16,7 +16,7 @@ namespace EntiEspais
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Plantilla.Perfil());
+            Application.Run(new IniciarSesio());
         }
     }
 }
