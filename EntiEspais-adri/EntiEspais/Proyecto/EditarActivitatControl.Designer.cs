@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -209,16 +208,6 @@
             this.label5.Size = new System.Drawing.Size(23, 33);
             this.label5.TabIndex = 80;
             this.label5.Text = ":";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
-            this.label8.Location = new System.Drawing.Point(308, 468);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 33);
-            this.label8.TabIndex = 87;
-            this.label8.Text = ":";
             // 
             // label23
             // 
@@ -567,7 +556,6 @@
             this.panel1.Controls.Add(this.comboBoxHoraTardaiIniciDilluns);
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.comboBoxHorariMatiTancarDilluns);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.comboBoxHoraMatiIniciDilluns);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label15);
@@ -1378,7 +1366,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

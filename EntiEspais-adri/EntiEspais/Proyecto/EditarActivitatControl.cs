@@ -23,10 +23,6 @@ namespace EntiEspais.Proyecto
             comboBoxTipus.Text = defaultTextTipus;
             comboBoxEspais.Text = defaultTextEspais;
             comboBoxEquips.Text = defaultTextEquips;
-
-            comboBoxTipus.Items.Add("proba");
-            comboBoxEspais.Items.Add("proba");
-            comboBoxEquips.Items.Add("proba");
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -37,7 +33,7 @@ namespace EntiEspais.Proyecto
                 // SI ha realizado cambios mostramos un mensaje
                 DialogResult resultado;
 
-                resultado = MessageBox.Show("Estas segur de voler tancar el formulari sense tancar?", "Hi ha canvis pendents!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                resultado = MessageBox.Show("Estas segur de voler tancar el formulari sense guardar?", "Hi ha canvis pendents!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 // Si el usuario ha confirmado que quiere salir cerramos el formulario
                 if(resultado == System.Windows.Forms.DialogResult.Yes)
@@ -178,5 +174,6 @@ namespace EntiEspais.Proyecto
                 return false;
             }                        
         }
+        
     }
 }
