@@ -1345,6 +1345,7 @@
             this.buttonDesar.TabIndex = 129;
             this.buttonDesar.Text = "Desar";
             this.buttonDesar.UseVisualStyleBackColor = false;
+            this.buttonDesar.Click += new System.EventHandler(this.buttonDesar_Click);
             // 
             // EditarActivitatControl
             // 
