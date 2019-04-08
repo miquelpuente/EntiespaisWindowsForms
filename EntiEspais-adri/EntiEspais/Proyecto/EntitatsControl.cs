@@ -84,6 +84,10 @@ namespace EntiEspais.Plantilla
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 113);
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.Font = new Font ("Roboto", 12, FontStyle.Bold);
+
+            //Bindeado de datos 
+
+            dataGridVieweEntitats.DataSource = Proyecto.BaseDatos.Entidades.selectAllEntidades();
         }
 
         private void dataGridVieweEntitats_CellContentClick(object sender, DataGridViewCellEventArgs e)
