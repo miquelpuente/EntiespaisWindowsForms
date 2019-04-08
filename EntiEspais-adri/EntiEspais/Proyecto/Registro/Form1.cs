@@ -261,10 +261,12 @@ namespace EntiEspais
                                 if (textBoxContrasenya.Text == textBoxRepetirContrasenya.Text)
                                 {
                                     /*
-                                     * 
-                                     * AÑADIR FUNCIÓN PARA ABIR EL SIGUIENTE FORMULARIO
-                                     * 
+                                     * Agregar el usuario a la BD
                                      */
+                                    Plantilla.Perfil a = new Plantilla.Perfil();
+                                    a.Show();
+
+                                    this.Hide();
                                 }
                                 else
                                 {
