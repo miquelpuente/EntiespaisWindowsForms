@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -67,9 +68,13 @@
             this.ColumnDomingo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEsborrar = new System.Windows.Forms.Button();
             this.buttonDesar = new System.Windows.Forms.Button();
+            this.labelDies = new System.Windows.Forms.Label();
+            this.comboBoxDies = new System.Windows.Forms.ComboBox();
+            this.bindingSourceActividadesDemandadas = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweSollicituds)).BeginInit();
             this.panelCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweAgregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceActividadesDemandadas)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridVieweSollicituds
@@ -105,10 +110,9 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridVieweSollicituds.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVieweSollicituds.GridColor = System.Drawing.Color.White;
-            this.dataGridVieweSollicituds.Location = new System.Drawing.Point(16, 236);
-            this.dataGridVieweSollicituds.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridVieweSollicituds.Location = new System.Drawing.Point(12, 192);
             this.dataGridVieweSollicituds.Name = "dataGridVieweSollicituds";
-            this.dataGridVieweSollicituds.Size = new System.Drawing.Size(880, 220);
+            this.dataGridVieweSollicituds.Size = new System.Drawing.Size(660, 179);
             this.dataGridVieweSollicituds.TabIndex = 4;
             this.dataGridVieweSollicituds.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVieweSollicituds_CellContentClick);
             // 
@@ -171,10 +175,9 @@
             this.panelCard.Controls.Add(this.labelTelefons);
             this.panelCard.Controls.Add(this.labelAdreçaElectronica);
             this.panelCard.Controls.Add(this.labelNomEntitat);
-            this.panelCard.Location = new System.Drawing.Point(16, 7);
-            this.panelCard.Margin = new System.Windows.Forms.Padding(4);
+            this.panelCard.Location = new System.Drawing.Point(12, 6);
             this.panelCard.Name = "panelCard";
-            this.panelCard.Size = new System.Drawing.Size(456, 206);
+            this.panelCard.Size = new System.Drawing.Size(342, 167);
             this.panelCard.TabIndex = 21;
             this.panelCard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCard_Paint);
             // 
@@ -183,10 +186,9 @@
             this.labelNumero.AutoSize = true;
             this.labelNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumero.ForeColor = System.Drawing.Color.White;
-            this.labelNumero.Location = new System.Drawing.Point(56, 158);
-            this.labelNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNumero.Location = new System.Drawing.Point(42, 128);
             this.labelNumero.Name = "labelNumero";
-            this.labelNumero.Size = new System.Drawing.Size(84, 24);
+            this.labelNumero.Size = new System.Drawing.Size(66, 18);
             this.labelNumero.TabIndex = 8;
             this.labelNumero.Text = "Número:";
             // 
@@ -195,10 +197,9 @@
             this.labelRao.AutoSize = true;
             this.labelRao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRao.ForeColor = System.Drawing.Color.White;
-            this.labelRao.Location = new System.Drawing.Point(57, 128);
-            this.labelRao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRao.Location = new System.Drawing.Point(43, 104);
             this.labelRao.Name = "labelRao";
-            this.labelRao.Size = new System.Drawing.Size(49, 24);
+            this.labelRao.Size = new System.Drawing.Size(40, 18);
             this.labelRao.TabIndex = 7;
             this.labelRao.Text = "Raò:";
             // 
@@ -207,10 +208,9 @@
             this.labelTelefons.AutoSize = true;
             this.labelTelefons.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTelefons.ForeColor = System.Drawing.Color.White;
-            this.labelTelefons.Location = new System.Drawing.Point(29, 98);
-            this.labelTelefons.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTelefons.Location = new System.Drawing.Point(22, 80);
             this.labelTelefons.Name = "labelTelefons";
-            this.labelTelefons.Size = new System.Drawing.Size(88, 24);
+            this.labelTelefons.Size = new System.Drawing.Size(69, 18);
             this.labelTelefons.TabIndex = 6;
             this.labelTelefons.Text = "Telèfons:";
             // 
@@ -219,10 +219,9 @@
             this.labelAdreçaElectronica.AutoSize = true;
             this.labelAdreçaElectronica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdreçaElectronica.ForeColor = System.Drawing.Color.White;
-            this.labelAdreçaElectronica.Location = new System.Drawing.Point(29, 65);
-            this.labelAdreçaElectronica.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAdreçaElectronica.Location = new System.Drawing.Point(22, 53);
             this.labelAdreçaElectronica.Name = "labelAdreçaElectronica";
-            this.labelAdreçaElectronica.Size = new System.Drawing.Size(173, 24);
+            this.labelAdreçaElectronica.Size = new System.Drawing.Size(134, 18);
             this.labelAdreçaElectronica.TabIndex = 5;
             this.labelAdreçaElectronica.Text = "Adreça elèctronica:";
             // 
@@ -231,27 +230,28 @@
             this.labelNomEntitat.AutoSize = true;
             this.labelNomEntitat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomEntitat.ForeColor = System.Drawing.Color.White;
-            this.labelNomEntitat.Location = new System.Drawing.Point(75, 17);
-            this.labelNomEntitat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNomEntitat.Location = new System.Drawing.Point(56, 14);
             this.labelNomEntitat.Name = "labelNomEntitat";
-            this.labelNomEntitat.Size = new System.Drawing.Size(210, 31);
+            this.labelNomEntitat.Size = new System.Drawing.Size(165, 25);
             this.labelNomEntitat.TabIndex = 0;
             this.labelNomEntitat.Text = "NOM ENTITAT";
             // 
             // comboBoxNomInstallacions
             // 
             this.comboBoxNomInstallacions.FormattingEnabled = true;
-            this.comboBoxNomInstallacions.Location = new System.Drawing.Point(493, 41);
+            this.comboBoxNomInstallacions.Location = new System.Drawing.Point(370, 33);
+            this.comboBoxNomInstallacions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxNomInstallacions.Name = "comboBoxNomInstallacions";
-            this.comboBoxNomInstallacions.Size = new System.Drawing.Size(327, 24);
+            this.comboBoxNomInstallacions.Size = new System.Drawing.Size(246, 21);
             this.comboBoxNomInstallacions.TabIndex = 22;
             // 
             // comboBoxNomEspais
             // 
             this.comboBoxNomEspais.FormattingEnabled = true;
-            this.comboBoxNomEspais.Location = new System.Drawing.Point(493, 100);
+            this.comboBoxNomEspais.Location = new System.Drawing.Point(370, 81);
+            this.comboBoxNomEspais.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxNomEspais.Name = "comboBoxNomEspais";
-            this.comboBoxNomEspais.Size = new System.Drawing.Size(327, 24);
+            this.comboBoxNomEspais.Size = new System.Drawing.Size(246, 21);
             this.comboBoxNomEspais.TabIndex = 23;
             this.comboBoxNomEspais.SelectedIndexChanged += new System.EventHandler(this.comboBoxNomEspais_SelectedIndexChanged);
             // 
@@ -260,9 +260,10 @@
             this.labelInstallacions.AutoSize = true;
             this.labelInstallacions.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelInstallacions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelInstallacions.Location = new System.Drawing.Point(496, 9);
+            this.labelInstallacions.Location = new System.Drawing.Point(372, 7);
+            this.labelInstallacions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInstallacions.Name = "labelInstallacions";
-            this.labelInstallacions.Size = new System.Drawing.Size(151, 29);
+            this.labelInstallacions.Size = new System.Drawing.Size(116, 24);
             this.labelInstallacions.TabIndex = 24;
             this.labelInstallacions.Text = "Instal·lacions";
             // 
@@ -271,9 +272,10 @@
             this.labelEspais.AutoSize = true;
             this.labelEspais.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEspais.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelEspais.Location = new System.Drawing.Point(496, 68);
+            this.labelEspais.Location = new System.Drawing.Point(372, 55);
+            this.labelEspais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEspais.Name = "labelEspais";
-            this.labelEspais.Size = new System.Drawing.Size(86, 29);
+            this.labelEspais.Size = new System.Drawing.Size(66, 24);
             this.labelEspais.TabIndex = 25;
             this.labelEspais.Text = "Espais";
             this.labelEspais.Click += new System.EventHandler(this.labelEspais_Click);
@@ -286,10 +288,10 @@
             this.buttonAsignar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAsignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonAsignar.ForeColor = System.Drawing.Color.White;
-            this.buttonAsignar.Location = new System.Drawing.Point(608, 189);
-            this.buttonAsignar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
+            this.buttonAsignar.Location = new System.Drawing.Point(499, 154);
+            this.buttonAsignar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
             this.buttonAsignar.Name = "buttonAsignar";
-            this.buttonAsignar.Size = new System.Drawing.Size(212, 41);
+            this.buttonAsignar.Size = new System.Drawing.Size(159, 33);
             this.buttonAsignar.TabIndex = 26;
             this.buttonAsignar.Text = "ASSIGNAR";
             this.buttonAsignar.UseVisualStyleBackColor = false;
@@ -300,9 +302,10 @@
             this.labelHoraris.AutoSize = true;
             this.labelHoraris.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHoraris.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelHoraris.Location = new System.Drawing.Point(496, 128);
+            this.labelHoraris.Location = new System.Drawing.Point(372, 106);
+            this.labelHoraris.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHoraris.Name = "labelHoraris";
-            this.labelHoraris.Size = new System.Drawing.Size(91, 29);
+            this.labelHoraris.Size = new System.Drawing.Size(70, 24);
             this.labelHoraris.TabIndex = 28;
             this.labelHoraris.Text = "Horaris";
             this.labelHoraris.Click += new System.EventHandler(this.label1_Click);
@@ -310,9 +313,10 @@
             // comboBoxHoraris
             // 
             this.comboBoxHoraris.FormattingEnabled = true;
-            this.comboBoxHoraris.Location = new System.Drawing.Point(493, 160);
+            this.comboBoxHoraris.Location = new System.Drawing.Point(370, 130);
+            this.comboBoxHoraris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxHoraris.Name = "comboBoxHoraris";
-            this.comboBoxHoraris.Size = new System.Drawing.Size(327, 24);
+            this.comboBoxHoraris.Size = new System.Drawing.Size(102, 21);
             this.comboBoxHoraris.TabIndex = 27;
             this.comboBoxHoraris.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -347,10 +351,9 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridVieweAgregar.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridVieweAgregar.GridColor = System.Drawing.Color.White;
-            this.dataGridVieweAgregar.Location = new System.Drawing.Point(16, 473);
-            this.dataGridVieweAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridVieweAgregar.Location = new System.Drawing.Point(12, 384);
             this.dataGridVieweAgregar.Name = "dataGridVieweAgregar";
-            this.dataGridVieweAgregar.Size = new System.Drawing.Size(861, 249);
+            this.dataGridVieweAgregar.Size = new System.Drawing.Size(646, 202);
             this.dataGridVieweAgregar.TabIndex = 29;
             // 
             // ColumnHores
@@ -401,10 +404,10 @@
             this.buttonEsborrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEsborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonEsborrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
-            this.buttonEsborrar.Location = new System.Drawing.Point(420, 735);
-            this.buttonEsborrar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
+            this.buttonEsborrar.Location = new System.Drawing.Point(315, 597);
+            this.buttonEsborrar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
             this.buttonEsborrar.Name = "buttonEsborrar";
-            this.buttonEsborrar.Size = new System.Drawing.Size(209, 50);
+            this.buttonEsborrar.Size = new System.Drawing.Size(157, 41);
             this.buttonEsborrar.TabIndex = 31;
             this.buttonEsborrar.Text = "Esborrar";
             this.buttonEsborrar.UseVisualStyleBackColor = false;
@@ -418,19 +421,42 @@
             this.buttonDesar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonDesar.ForeColor = System.Drawing.Color.White;
-            this.buttonDesar.Location = new System.Drawing.Point(668, 735);
-            this.buttonDesar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
+            this.buttonDesar.Location = new System.Drawing.Point(501, 597);
+            this.buttonDesar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
             this.buttonDesar.Name = "buttonDesar";
-            this.buttonDesar.Size = new System.Drawing.Size(209, 50);
+            this.buttonDesar.Size = new System.Drawing.Size(157, 41);
             this.buttonDesar.TabIndex = 30;
             this.buttonDesar.Text = "Desar";
             this.buttonDesar.UseVisualStyleBackColor = false;
             // 
+            // labelDies
+            // 
+            this.labelDies.AutoSize = true;
+            this.labelDies.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDies.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelDies.Location = new System.Drawing.Point(493, 106);
+            this.labelDies.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDies.Name = "labelDies";
+            this.labelDies.Size = new System.Drawing.Size(47, 24);
+            this.labelDies.TabIndex = 33;
+            this.labelDies.Text = "Dies";
+            // 
+            // comboBoxDies
+            // 
+            this.comboBoxDies.FormattingEnabled = true;
+            this.comboBoxDies.Location = new System.Drawing.Point(491, 130);
+            this.comboBoxDies.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxDies.Name = "comboBoxDies";
+            this.comboBoxDies.Size = new System.Drawing.Size(167, 21);
+            this.comboBoxDies.TabIndex = 32;
+            // 
             // SollicitudsControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
+            this.Controls.Add(this.labelDies);
+            this.Controls.Add(this.comboBoxDies);
             this.Controls.Add(this.buttonEsborrar);
             this.Controls.Add(this.buttonDesar);
             this.Controls.Add(this.dataGridVieweAgregar);
@@ -443,14 +469,14 @@
             this.Controls.Add(this.comboBoxNomInstallacions);
             this.Controls.Add(this.panelCard);
             this.Controls.Add(this.dataGridVieweSollicituds);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SollicitudsControl";
-            this.Size = new System.Drawing.Size(900, 804);
+            this.Size = new System.Drawing.Size(675, 653);
             this.Load += new System.EventHandler(this.SollicitudsControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweSollicituds)).EndInit();
             this.panelCard.ResumeLayout(false);
             this.panelCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweAgregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceActividadesDemandadas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,5 +519,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIntervalHores;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDiesSetmana;
         private System.Windows.Forms.DataGridViewComboBoxColumn ColumnAsignada;
+        private System.Windows.Forms.Label labelDies;
+        private System.Windows.Forms.ComboBox comboBoxDies;
+        private System.Windows.Forms.BindingSource bindingSourceActividadesDemandadas;
     }
 }
