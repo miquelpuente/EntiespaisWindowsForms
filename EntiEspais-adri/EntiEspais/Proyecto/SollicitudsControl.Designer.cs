@@ -33,6 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridVieweSollicituds = new System.Windows.Forms.DataGridView();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNomActivitat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTipus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDurada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEspai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEquip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDies = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnIntervalHores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDiesSetmana = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAsignada = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panelCard = new System.Windows.Forms.Panel();
             this.labelNumero = new System.Windows.Forms.Label();
             this.labelRao = new System.Windows.Forms.Label();
@@ -57,16 +67,6 @@
             this.ColumnDomingo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEsborrar = new System.Windows.Forms.Button();
             this.buttonDesar = new System.Windows.Forms.Button();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNomActivitat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTipus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDurada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEspai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEquip = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDies = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnIntervalHores = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDiesSetmana = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnAsignada = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweSollicituds)).BeginInit();
             this.panelCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweAgregar)).BeginInit();
@@ -111,6 +111,57 @@
             this.dataGridVieweSollicituds.Size = new System.Drawing.Size(880, 220);
             this.dataGridVieweSollicituds.TabIndex = 4;
             this.dataGridVieweSollicituds.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVieweSollicituds_CellContentClick);
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.HeaderText = "ID";
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.Width = 35;
+            // 
+            // ColumnNomActivitat
+            // 
+            this.ColumnNomActivitat.HeaderText = "Activitat";
+            this.ColumnNomActivitat.Name = "ColumnNomActivitat";
+            // 
+            // ColumnTipus
+            // 
+            this.ColumnTipus.HeaderText = "Tipus";
+            this.ColumnTipus.Name = "ColumnTipus";
+            // 
+            // ColumnDurada
+            // 
+            this.ColumnDurada.HeaderText = "Durada";
+            this.ColumnDurada.Name = "ColumnDurada";
+            // 
+            // ColumnEspai
+            // 
+            this.ColumnEspai.HeaderText = "Espai";
+            this.ColumnEspai.Name = "ColumnEspai";
+            // 
+            // ColumnEquip
+            // 
+            this.ColumnEquip.HeaderText = "Equip";
+            this.ColumnEquip.Name = "ColumnEquip";
+            // 
+            // ColumnDies
+            // 
+            this.ColumnDies.HeaderText = "Dies";
+            this.ColumnDies.Name = "ColumnDies";
+            // 
+            // ColumnIntervalHores
+            // 
+            this.ColumnIntervalHores.HeaderText = "hores";
+            this.ColumnIntervalHores.Name = "ColumnIntervalHores";
+            // 
+            // ColumnDiesSetmana
+            // 
+            this.ColumnDiesSetmana.HeaderText = "Dia";
+            this.ColumnDiesSetmana.Name = "ColumnDiesSetmana";
+            // 
+            // ColumnAsignada
+            // 
+            this.ColumnAsignada.HeaderText = "Asignada";
+            this.ColumnAsignada.Name = "ColumnAsignada";
             // 
             // panelCard
             // 
@@ -235,7 +286,7 @@
             this.buttonAsignar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAsignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonAsignar.ForeColor = System.Drawing.Color.White;
-            this.buttonAsignar.Location = new System.Drawing.Point(665, 189);
+            this.buttonAsignar.Location = new System.Drawing.Point(608, 189);
             this.buttonAsignar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonAsignar.Name = "buttonAsignar";
             this.buttonAsignar.Size = new System.Drawing.Size(212, 41);
@@ -374,57 +425,6 @@
             this.buttonDesar.TabIndex = 30;
             this.buttonDesar.Text = "Desar";
             this.buttonDesar.UseVisualStyleBackColor = false;
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.HeaderText = "ID";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.Width = 35;
-            // 
-            // ColumnNomActivitat
-            // 
-            this.ColumnNomActivitat.HeaderText = "Activitat";
-            this.ColumnNomActivitat.Name = "ColumnNomActivitat";
-            // 
-            // ColumnTipus
-            // 
-            this.ColumnTipus.HeaderText = "Tipus";
-            this.ColumnTipus.Name = "ColumnTipus";
-            // 
-            // ColumnDurada
-            // 
-            this.ColumnDurada.HeaderText = "Durada";
-            this.ColumnDurada.Name = "ColumnDurada";
-            // 
-            // ColumnEspai
-            // 
-            this.ColumnEspai.HeaderText = "Espai";
-            this.ColumnEspai.Name = "ColumnEspai";
-            // 
-            // ColumnEquip
-            // 
-            this.ColumnEquip.HeaderText = "Equip";
-            this.ColumnEquip.Name = "ColumnEquip";
-            // 
-            // ColumnDies
-            // 
-            this.ColumnDies.HeaderText = "Dies";
-            this.ColumnDies.Name = "ColumnDies";
-            // 
-            // ColumnIntervalHores
-            // 
-            this.ColumnIntervalHores.HeaderText = "hores";
-            this.ColumnIntervalHores.Name = "ColumnIntervalHores";
-            // 
-            // ColumnDiesSetmana
-            // 
-            this.ColumnDiesSetmana.HeaderText = "Dia";
-            this.ColumnDiesSetmana.Name = "ColumnDiesSetmana";
-            // 
-            // ColumnAsignada
-            // 
-            this.ColumnAsignada.HeaderText = "Asignada";
-            this.ColumnAsignada.Name = "ColumnAsignada";
             // 
             // SollicitudsControl
             // 
