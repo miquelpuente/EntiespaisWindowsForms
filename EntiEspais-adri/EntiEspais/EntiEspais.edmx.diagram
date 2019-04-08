@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18219d7ff2134ef88f6cd23cafc751ed" Name="Diagram1">
+        <EntityTypeShape EntityType="EntiEspaisModel.ActivitatsConcedides" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.ActivitatsDemanades" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Categoria" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.CategoriaEdat" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Competicio" Width="1.5" PointX="3" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Dia" Width="1.5" PointX="10.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Durada" Width="1.5" PointX="10.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Entitat" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Equip" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Espai" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Esport" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Horari" Width="1.5" PointX="12.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Horari_activitat" Width="1.5" PointX="12.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Horari_ActivitatDemanda" Width="1.5" PointX="15.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Horari_Instal_lacio" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Instal_lacio" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Sexe" Width="1.5" PointX="3" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Telefon" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EntiEspaisModel.Usuaris" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="EntiEspaisModel.FK_ActivitatsConcedides_ActivitatsDemanades" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_ActivitatsConcedides_Equip" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_ActivitatsConcedides_Espai" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_ActivitatsConcedides_Usuaris" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_activitat_ActivitatsConcedides" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_ActivitatsConcedides" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_ActivitatsDemanades_Equip" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_ActivitatsDemanades_Espai" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Dia_ActivitatsDemanades" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Durada_ActivitatsDemanades" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_ActivitatDemanda_ActivitatsDemanades" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_Categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_CategoriaEdat" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_Competicio" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_activitat_Dia" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_ActivitatDemanda_Dia" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_Dia" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_Instal_lacio_Dia" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_Durada" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_Entitat" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Telefon_Entitat" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_Espai" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_Esport" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Equip_Sexe" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Espai_Instal_lacio" ManuallyRouted="false" />
+        <AssociationConnector Association="EntiEspaisModel.FK_Horari_Instal_lacio_Instal_lacio" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
