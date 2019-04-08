@@ -25,30 +25,6 @@ namespace EntiEspais.Proyecto
             comboBoxEquips.Text = defaultTextEquips;
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
-        {
-            // Nos aseguramos si el usuario ha introducido datos al cerrar
-            if (noCanvis())
-            {
-                // SI ha realizado cambios mostramos un mensaje
-                DialogResult resultado;
-
-                resultado = MessageBox.Show("Estas segur de voler tancar el formulari sense guardar?", "Hi ha canvis pendents!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-
-                // Si el usuario ha confirmado que quiere salir cerramos el formulario
-                if(resultado == System.Windows.Forms.DialogResult.Yes)
-                {
-                    tancarFormulari();
-                }
-            }
-            // Si el usuario no ha introducido datos
-            else
-            {
-                tancarFormulari();
-            }
-            
-        }
-
         private bool noCanvis()
         {
             // comprobamos que no se ha cambiado ninguna combobox de las 3 primeras
@@ -116,19 +92,7 @@ namespace EntiEspais.Proyecto
             }
         }
         
-        public EditarActivitatControl()
-        {
-            InitializeComponent();
-        }
-
-       
-
-        
-
-      
-        
-
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private bool totsElsCanvis()
         {
             int contador = 0;
 
@@ -185,6 +149,29 @@ namespace EntiEspais.Proyecto
             {
                 return false;
             }                        
+        }
+
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
+        {
+            // Nos aseguramos si el usuario ha introducido datos al cerrar
+            if (noCanvis())
+            {
+                // SI ha realizado cambios mostramos un mensaje
+                DialogResult resultado;
+
+                resultado = MessageBox.Show("Estas segur de voler tancar el formulari sense guardar?", "Hi ha canvis pendents!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                // Si el usuario ha confirmado que quiere salir cerramos el formulario
+                if (resultado == System.Windows.Forms.DialogResult.Yes)
+                {
+                    tancarFormulari();
+                }
+            }
+            // Si el usuario no ha introducido datos
+            else
+            {
+                tancarFormulari();
+            }
         }
     }
 }
