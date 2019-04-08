@@ -94,7 +94,6 @@
             this.textBoxID.Size = new System.Drawing.Size(723, 33);
             this.textBoxID.TabIndex = 13;
             this.textBoxID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxID_MouseClick);
-            this.textBoxID.TextChanged += new System.EventHandler(this.textBoxID_TextChanged);
             this.textBoxID.MouseLeave += new System.EventHandler(this.textBoxID_MouseLeave);
             // 
             // textBoxAdreça
