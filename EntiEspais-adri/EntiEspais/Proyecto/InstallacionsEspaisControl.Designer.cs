@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstallacionsEspaisControl));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelStaticDireccio = new System.Windows.Forms.Label();
             this.labelDireccio = new System.Windows.Forms.Label();
             this.panelInstalacio = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelNom = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,14 +57,12 @@
             this.ColumnNom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPreu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnExterior = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelNom = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonDesar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.panelInstalacio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).BeginInit();
             this.SuspendLayout();
             // 
             // labelStaticDireccio
@@ -119,6 +119,30 @@
             this.panelInstalacio.Name = "panelInstalacio";
             this.panelInstalacio.Size = new System.Drawing.Size(349, 462);
             this.panelInstalacio.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(22, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(305, 158);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.BackColor = System.Drawing.Color.Transparent;
+            this.labelNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Bold);
+            this.labelNom.ForeColor = System.Drawing.Color.White;
+            this.labelNom.Location = new System.Drawing.Point(93, 17);
+            this.labelNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(186, 29);
+            this.labelNom.TabIndex = 22;
+            this.labelNom.Text = "Nom instalació";
             // 
             // label7
             // 
@@ -345,27 +369,27 @@
             // 
             this.dataGridVieweEntitats.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(142)))), ((int)(((byte)(164)))));
             this.dataGridVieweEntitats.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVieweEntitats.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVieweEntitats.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridVieweEntitats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridVieweEntitats.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnNom,
             this.ColumnPreu,
             this.ColumnExterior});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(142)))), ((int)(((byte)(164)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVieweEntitats.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(142)))), ((int)(((byte)(164)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVieweEntitats.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVieweEntitats.GridColor = System.Drawing.Color.White;
             this.dataGridVieweEntitats.Location = new System.Drawing.Point(388, 67);
             this.dataGridVieweEntitats.Name = "dataGridVieweEntitats";
@@ -390,30 +414,6 @@
             this.ColumnExterior.HeaderText = "Exterior";
             this.ColumnExterior.Name = "ColumnExterior";
             this.ColumnExterior.Width = 70;
-            // 
-            // labelNom
-            // 
-            this.labelNom.AutoSize = true;
-            this.labelNom.BackColor = System.Drawing.Color.Transparent;
-            this.labelNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Bold);
-            this.labelNom.ForeColor = System.Drawing.Color.White;
-            this.labelNom.Location = new System.Drawing.Point(93, 17);
-            this.labelNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(186, 29);
-            this.labelNom.TabIndex = 22;
-            this.labelNom.Text = "Nom instalació";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 158);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonCancelar
             // 
@@ -481,8 +481,8 @@
             this.Load += new System.EventHandler(this.InstallacionsEspaisControl_Load);
             this.panelInstalacio.ResumeLayout(false);
             this.panelInstalacio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

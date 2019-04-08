@@ -115,8 +115,20 @@ namespace EntiEspais.Proyecto
                 MessageBox.Show("Has de seleccionar totes les opcions per a poder-ho guardar", "Atenció!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+        
+        public EditarActivitatControl()
+        {
+            InitializeComponent();
+        }
 
-        private bool totsElsCanvis()
+       
+
+        
+
+      
+        
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
         {
             int contador = 0;
 
