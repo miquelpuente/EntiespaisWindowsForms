@@ -69,12 +69,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Proyecto\AsignacioSollicitudsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Proyecto\AsignacioSollicitudsControl.Designer.cs">
-      <DependentUpon>AsignacioSollicitudsControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Proyecto\IniciarSesion\IniciarSesio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,9 +173,6 @@
     <Compile Include="Proyecto\SollicitudsControl.Designer.cs">
       <DependentUpon>SollicitudsControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proyecto\AsignacioSollicitudsControl.resx">
-      <DependentUpon>AsignacioSollicitudsControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\IniciarSesion\IniciarSesio.resx">
       <DependentUpon>IniciarSesio.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,8 +275,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Proyecto\agregarSolicitud\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
