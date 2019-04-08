@@ -36,5 +36,22 @@ namespace EntiEspais.Proyecto
             dataGridVieweSollicituds.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridVieweSollicituds.ColumnHeadersDefaultCellStyle.Font = new Font("Roboto", 12, FontStyle.Bold);
         }
+
+        private void dataGridVieweSollicituds_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
+
+        private void panelCard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonAbrir_Click(object sender, EventArgs e)
+        {
+            AsignacioSollicitudsControl sc = new AsignacioSollicitudsControl();
+            this.Controls.Add(sc);
+            sc.BringToFront();
+        }
+    }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilControl));
             System.Windows.Forms.Button buttonCerrarSesion;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilControl));
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.textBoxCognoms = new System.Windows.Forms.TextBox();
             this.textBoxID = new System.Windows.Forms.TextBox();
@@ -39,6 +39,23 @@
             this.buttonEditar = new System.Windows.Forms.Button();
             buttonCerrarSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // buttonCerrarSesion
+            // 
+            buttonCerrarSesion.Cursor = System.Windows.Forms.Cursors.Default;
+            buttonCerrarSesion.FlatAppearance.BorderSize = 0;
+            buttonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            buttonCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
+            buttonCerrarSesion.ForeColor = System.Drawing.Color.White;
+            buttonCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("buttonCerrarSesion.Image")));
+            buttonCerrarSesion.Location = new System.Drawing.Point(845, 5);
+            buttonCerrarSesion.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
+            buttonCerrarSesion.Name = "buttonCerrarSesion";
+            buttonCerrarSesion.Size = new System.Drawing.Size(39, 42);
+            buttonCerrarSesion.TabIndex = 19;
+            buttonCerrarSesion.Text = " ";
+            buttonCerrarSesion.UseVisualStyleBackColor = false;
+            buttonCerrarSesion.Click += new System.EventHandler(this.buttonCerrarSesion_Click);
             // 
             // textBoxNom
             // 
@@ -138,22 +155,6 @@
             this.buttonEditar.UseVisualStyleBackColor = false;
             this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
-            // buttonCerrarSesion
-            // 
-            buttonCerrarSesion.Cursor = System.Windows.Forms.Cursors.Default;
-            buttonCerrarSesion.FlatAppearance.BorderSize = 0;
-            buttonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            buttonCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
-            buttonCerrarSesion.ForeColor = System.Drawing.Color.White;
-            buttonCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("buttonCerrarSesion.Image")));
-            buttonCerrarSesion.Location = new System.Drawing.Point(817, 37);
-            buttonCerrarSesion.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
-            buttonCerrarSesion.Name = "buttonCerrarSesion";
-            buttonCerrarSesion.Size = new System.Drawing.Size(39, 39);
-            buttonCerrarSesion.TabIndex = 19;
-            buttonCerrarSesion.Text = " ";
-            buttonCerrarSesion.UseVisualStyleBackColor = false;
-            // 
             // PerfilControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -167,7 +168,7 @@
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.textBoxCognoms);
             this.Controls.Add(this.textBoxNom);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PerfilControl";
             this.Size = new System.Drawing.Size(900, 702);
             this.Load += new System.EventHandler(this.PerfilControl_Load);

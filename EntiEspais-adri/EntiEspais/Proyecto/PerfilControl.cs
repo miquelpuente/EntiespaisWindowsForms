@@ -267,5 +267,21 @@ namespace EntiEspais.Plantilla
             this.Controls.Add(a);
             a.BringToFront();
         }
+
+        private void buttonCerrarSesion_Click(object sender, EventArgs e)
+        {
+            
+
+
+            DialogResult result;
+            //preguntamos si desea cerrar sesión
+            result = MessageBox.Show("Desitges tancar sessió?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                // Cerramos la sesion
+
+                Application.Exit();
+            }
+        }
     }
 }

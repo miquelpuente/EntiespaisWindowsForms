@@ -47,6 +47,11 @@
             this.labelTelefons = new System.Windows.Forms.Label();
             this.labelAdreçaElectronica = new System.Windows.Forms.Label();
             this.labelNomEntitat = new System.Windows.Forms.Label();
+            this.comboBoxNomInstallacions = new System.Windows.Forms.ComboBox();
+            this.comboBoxNomEspais = new System.Windows.Forms.ComboBox();
+            this.labelInstallacions = new System.Windows.Forms.Label();
+            this.labelEspais = new System.Windows.Forms.Label();
+            this.buttonAbrir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweSollicituds)).BeginInit();
             this.panelCard.SuspendLayout();
             this.SuspendLayout();
@@ -84,10 +89,12 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridVieweSollicituds.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridVieweSollicituds.GridColor = System.Drawing.Color.White;
-            this.dataGridVieweSollicituds.Location = new System.Drawing.Point(12, 223);
+            this.dataGridVieweSollicituds.Location = new System.Drawing.Point(16, 274);
+            this.dataGridVieweSollicituds.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridVieweSollicituds.Name = "dataGridVieweSollicituds";
-            this.dataGridVieweSollicituds.Size = new System.Drawing.Size(646, 305);
+            this.dataGridVieweSollicituds.Size = new System.Drawing.Size(861, 375);
             this.dataGridVieweSollicituds.TabIndex = 4;
+            this.dataGridVieweSollicituds.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVieweSollicituds_CellContentClick);
             // 
             // ColumnID
             // 
@@ -148,48 +155,58 @@
             this.panelCard.Controls.Add(this.labelTelefons);
             this.panelCard.Controls.Add(this.labelAdreçaElectronica);
             this.panelCard.Controls.Add(this.labelNomEntitat);
-            this.panelCard.Location = new System.Drawing.Point(23, 49);
+            this.panelCard.Location = new System.Drawing.Point(16, 44);
+            this.panelCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelCard.Name = "panelCard";
-            this.panelCard.Size = new System.Drawing.Size(599, 154);
+            this.panelCard.Size = new System.Drawing.Size(456, 206);
             this.panelCard.TabIndex = 21;
+            this.panelCard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCard_Paint);
             // 
             // labelNumero
             // 
             this.labelNumero.AutoSize = true;
+            this.labelNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumero.ForeColor = System.Drawing.Color.White;
-            this.labelNumero.Location = new System.Drawing.Point(42, 120);
+            this.labelNumero.Location = new System.Drawing.Point(56, 158);
+            this.labelNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNumero.Name = "labelNumero";
-            this.labelNumero.Size = new System.Drawing.Size(47, 13);
+            this.labelNumero.Size = new System.Drawing.Size(84, 24);
             this.labelNumero.TabIndex = 8;
             this.labelNumero.Text = "Número:";
             // 
             // labelRao
             // 
             this.labelRao.AutoSize = true;
+            this.labelRao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRao.ForeColor = System.Drawing.Color.White;
-            this.labelRao.Location = new System.Drawing.Point(43, 102);
+            this.labelRao.Location = new System.Drawing.Point(57, 128);
+            this.labelRao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRao.Name = "labelRao";
-            this.labelRao.Size = new System.Drawing.Size(30, 13);
+            this.labelRao.Size = new System.Drawing.Size(49, 24);
             this.labelRao.TabIndex = 7;
             this.labelRao.Text = "Raò:";
             // 
             // labelTelefons
             // 
             this.labelTelefons.AutoSize = true;
+            this.labelTelefons.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTelefons.ForeColor = System.Drawing.Color.White;
-            this.labelTelefons.Location = new System.Drawing.Point(22, 80);
+            this.labelTelefons.Location = new System.Drawing.Point(29, 98);
+            this.labelTelefons.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTelefons.Name = "labelTelefons";
-            this.labelTelefons.Size = new System.Drawing.Size(51, 13);
+            this.labelTelefons.Size = new System.Drawing.Size(88, 24);
             this.labelTelefons.TabIndex = 6;
             this.labelTelefons.Text = "Telèfons:";
             // 
             // labelAdreçaElectronica
             // 
             this.labelAdreçaElectronica.AutoSize = true;
+            this.labelAdreçaElectronica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdreçaElectronica.ForeColor = System.Drawing.Color.White;
-            this.labelAdreçaElectronica.Location = new System.Drawing.Point(22, 53);
+            this.labelAdreçaElectronica.Location = new System.Drawing.Point(29, 65);
+            this.labelAdreçaElectronica.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAdreçaElectronica.Name = "labelAdreçaElectronica";
-            this.labelAdreçaElectronica.Size = new System.Drawing.Size(99, 13);
+            this.labelAdreçaElectronica.Size = new System.Drawing.Size(173, 24);
             this.labelAdreçaElectronica.TabIndex = 5;
             this.labelAdreçaElectronica.Text = "Adreça elèctronica:";
             // 
@@ -198,26 +215,89 @@
             this.labelNomEntitat.AutoSize = true;
             this.labelNomEntitat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomEntitat.ForeColor = System.Drawing.Color.White;
-            this.labelNomEntitat.Location = new System.Drawing.Point(56, 14);
+            this.labelNomEntitat.Location = new System.Drawing.Point(75, 17);
+            this.labelNomEntitat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNomEntitat.Name = "labelNomEntitat";
-            this.labelNomEntitat.Size = new System.Drawing.Size(165, 25);
+            this.labelNomEntitat.Size = new System.Drawing.Size(210, 31);
             this.labelNomEntitat.TabIndex = 0;
             this.labelNomEntitat.Text = "NOM ENTITAT";
             // 
+            // comboBoxNomInstallacions
+            // 
+            this.comboBoxNomInstallacions.FormattingEnabled = true;
+            this.comboBoxNomInstallacions.Location = new System.Drawing.Point(528, 86);
+            this.comboBoxNomInstallacions.Name = "comboBoxNomInstallacions";
+            this.comboBoxNomInstallacions.Size = new System.Drawing.Size(327, 24);
+            this.comboBoxNomInstallacions.TabIndex = 22;
+            // 
+            // comboBoxNomEspais
+            // 
+            this.comboBoxNomEspais.FormattingEnabled = true;
+            this.comboBoxNomEspais.Location = new System.Drawing.Point(528, 156);
+            this.comboBoxNomEspais.Name = "comboBoxNomEspais";
+            this.comboBoxNomEspais.Size = new System.Drawing.Size(327, 24);
+            this.comboBoxNomEspais.TabIndex = 23;
+            // 
+            // labelInstallacions
+            // 
+            this.labelInstallacions.AutoSize = true;
+            this.labelInstallacions.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInstallacions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelInstallacions.Location = new System.Drawing.Point(531, 54);
+            this.labelInstallacions.Name = "labelInstallacions";
+            this.labelInstallacions.Size = new System.Drawing.Size(151, 29);
+            this.labelInstallacions.TabIndex = 24;
+            this.labelInstallacions.Text = "Instal·lacions";
+            // 
+            // labelEspais
+            // 
+            this.labelEspais.AutoSize = true;
+            this.labelEspais.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEspais.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelEspais.Location = new System.Drawing.Point(531, 124);
+            this.labelEspais.Name = "labelEspais";
+            this.labelEspais.Size = new System.Drawing.Size(86, 29);
+            this.labelEspais.TabIndex = 25;
+            this.labelEspais.Text = "Espais";
+            // 
+            // buttonAbrir
+            // 
+            this.buttonAbrir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
+            this.buttonAbrir.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonAbrir.FlatAppearance.BorderSize = 0;
+            this.buttonAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
+            this.buttonAbrir.ForeColor = System.Drawing.Color.White;
+            this.buttonAbrir.Location = new System.Drawing.Point(705, 202);
+            this.buttonAbrir.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
+            this.buttonAbrir.Name = "buttonAbrir";
+            this.buttonAbrir.Size = new System.Drawing.Size(150, 41);
+            this.buttonAbrir.TabIndex = 26;
+            this.buttonAbrir.Text = " Abrir";
+            this.buttonAbrir.UseVisualStyleBackColor = false;
+            this.buttonAbrir.Click += new System.EventHandler(this.buttonAbrir_Click);
+            // 
             // SollicitudsControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
+            this.Controls.Add(this.buttonAbrir);
+            this.Controls.Add(this.labelEspais);
+            this.Controls.Add(this.labelInstallacions);
+            this.Controls.Add(this.comboBoxNomEspais);
+            this.Controls.Add(this.comboBoxNomInstallacions);
             this.Controls.Add(this.panelCard);
             this.Controls.Add(this.dataGridVieweSollicituds);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SollicitudsControl";
-            this.Size = new System.Drawing.Size(675, 570);
+            this.Size = new System.Drawing.Size(900, 702);
             this.Load += new System.EventHandler(this.SollicitudsControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweSollicituds)).EndInit();
             this.panelCard.ResumeLayout(false);
             this.panelCard.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -240,5 +320,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAsignada;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIntervalHores;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDiesSetmana;
+        private System.Windows.Forms.ComboBox comboBoxNomInstallacions;
+        private System.Windows.Forms.ComboBox comboBoxNomEspais;
+        private System.Windows.Forms.Label labelInstallacions;
+        private System.Windows.Forms.Label labelEspais;
+        private System.Windows.Forms.Button buttonAbrir;
     }
 }
