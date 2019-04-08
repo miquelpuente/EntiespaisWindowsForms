@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace EntiEspais.Proyecto.BaseDatos
 {
-    class Entidades
+    public static class Entidades
     {
+        public static List<Entitat> selectAllEntidades() {
+
+            List<Entitat> listaEntidades =
+                (from entidad in BD.bd.Entitat
+                 orderby entidad.nom
+                 select entidad
+                ).ToList();
+            return listaEntidades;
+        }
     }
 }

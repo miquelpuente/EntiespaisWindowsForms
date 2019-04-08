@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace EntiEspais.Proyecto.BaseDatos
 {
-    class Instalaciones
+   public static class Instalaciones
     {
+
+        public static List<Instal_lacio>selectAllInstalaciones(){
+            List<Instal_lacio> listaInstalaciones =
+                (from instalacion in BD.bd.Instal_lacio
+                 orderby instalacion.id
+                 select instalacion
+                ).ToList();
+            return listaInstalaciones;
+        }
     }
 }
