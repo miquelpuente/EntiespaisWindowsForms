@@ -127,7 +127,7 @@
             this.buttonEyeRepetirContrasenya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEyeRepetirContrasenya.ForeColor = System.Drawing.Color.Transparent;
             this.buttonEyeRepetirContrasenya.Image = global::EntiEspais.Properties.Resources.hide;
-            this.buttonEyeRepetirContrasenya.Location = new System.Drawing.Point(751, 447);
+            this.buttonEyeRepetirContrasenya.Location = new System.Drawing.Point(751, 448);
             this.buttonEyeRepetirContrasenya.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEyeRepetirContrasenya.Name = "buttonEyeRepetirContrasenya";
             this.buttonEyeRepetirContrasenya.Size = new System.Drawing.Size(52, 33);
@@ -143,7 +143,7 @@
             this.buttonEyeContrasenya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEyeContrasenya.ForeColor = System.Drawing.Color.Transparent;
             this.buttonEyeContrasenya.Image = global::EntiEspais.Properties.Resources.hide;
-            this.buttonEyeContrasenya.Location = new System.Drawing.Point(749, 384);
+            this.buttonEyeContrasenya.Location = new System.Drawing.Point(751, 384);
             this.buttonEyeContrasenya.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEyeContrasenya.Name = "buttonEyeContrasenya";
             this.buttonEyeContrasenya.Size = new System.Drawing.Size(52, 33);
