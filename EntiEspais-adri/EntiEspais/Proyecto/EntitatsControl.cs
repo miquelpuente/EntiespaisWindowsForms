@@ -35,7 +35,7 @@ namespace EntiEspais.Plantilla
             int variance = 8;
             // TextBox buscador
             textBoxBuscador.BorderStyle = BorderStyle.None;
-            Rectangle rectTextBoxBuscador = new Rectangle(textBoxBuscador.Location.X - variance / 2, textBoxBuscador.Location.Y - variance / 2, textBoxBuscador.Width + variance, textBoxBuscador.Height + variance);
+            Rectangle rectTextBoxBuscador = new Rectangle((textBoxBuscador.Location.X - variance) / 2, textBoxBuscador.Location.Y - variance / 2, textBoxBuscador.Width + variance + (pictureBox1.Width *2), textBoxBuscador.Height + variance);
             g.DrawRectangle(p, rectTextBoxBuscador);
 
         }

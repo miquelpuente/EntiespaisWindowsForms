@@ -68,9 +68,10 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridVieweEntitats.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVieweEntitats.GridColor = System.Drawing.Color.White;
-            this.dataGridVieweEntitats.Location = new System.Drawing.Point(68, 118);
+            this.dataGridVieweEntitats.Location = new System.Drawing.Point(91, 145);
+            this.dataGridVieweEntitats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridVieweEntitats.Name = "dataGridVieweEntitats";
-            this.dataGridVieweEntitats.Size = new System.Drawing.Size(542, 224);
+            this.dataGridVieweEntitats.Size = new System.Drawing.Size(723, 276);
             this.dataGridVieweEntitats.TabIndex = 3;
             this.dataGridVieweEntitats.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVieweEntitats_CellContentClick);
             // 
@@ -98,10 +99,10 @@
             this.textBoxBuscador.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBuscador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
-            this.textBoxBuscador.Location = new System.Drawing.Point(155, 25);
-            this.textBoxBuscador.Margin = new System.Windows.Forms.Padding(2, 24, 2, 2);
+            this.textBoxBuscador.Location = new System.Drawing.Point(207, 31);
+            this.textBoxBuscador.Margin = new System.Windows.Forms.Padding(3, 30, 3, 2);
             this.textBoxBuscador.Name = "textBoxBuscador";
-            this.textBoxBuscador.Size = new System.Drawing.Size(279, 26);
+            this.textBoxBuscador.Size = new System.Drawing.Size(372, 33);
             this.textBoxBuscador.TabIndex = 12;
             this.textBoxBuscador.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBuscador_MouseClick);
             this.textBoxBuscador.TextChanged += new System.EventHandler(this.textBoxBuscador_TextChanged);
@@ -115,10 +116,10 @@
             this.buttonIniciarSessio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonIniciarSessio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciarSessio.ForeColor = System.Drawing.Color.White;
-            this.buttonIniciarSessio.Location = new System.Drawing.Point(444, 22);
-            this.buttonIniciarSessio.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
+            this.buttonIniciarSessio.Location = new System.Drawing.Point(592, 27);
+            this.buttonIniciarSessio.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonIniciarSessio.Name = "buttonIniciarSessio";
-            this.buttonIniciarSessio.Size = new System.Drawing.Size(95, 33);
+            this.buttonIniciarSessio.Size = new System.Drawing.Size(127, 41);
             this.buttonIniciarSessio.TabIndex = 19;
             this.buttonIniciarSessio.Text = " Buscar";
             this.buttonIniciarSessio.UseVisualStyleBackColor = false;
@@ -127,23 +128,25 @@
             // 
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(155, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(168, 34);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // EntitatsControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
             this.Controls.Add(this.buttonIniciarSessio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxBuscador);
             this.Controls.Add(this.dataGridVieweEntitats);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EntitatsControl";
-            this.Size = new System.Drawing.Size(675, 570);
+            this.Size = new System.Drawing.Size(900, 702);
             this.Load += new System.EventHandler(this.EntitatsControl_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.EntitatsControl_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).EndInit();
