@@ -71,10 +71,9 @@
             this.labelStaticDireccio.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDireccio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F);
             this.labelStaticDireccio.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDireccio.Location = new System.Drawing.Point(23, 224);
-            this.labelStaticDireccio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDireccio.Location = new System.Drawing.Point(31, 276);
             this.labelStaticDireccio.Name = "labelStaticDireccio";
-            this.labelStaticDireccio.Size = new System.Drawing.Size(89, 24);
+            this.labelStaticDireccio.Size = new System.Drawing.Size(114, 29);
             this.labelStaticDireccio.TabIndex = 1;
             this.labelStaticDireccio.Text = "Direcció: ";
             // 
@@ -84,10 +83,9 @@
             this.labelDireccio.BackColor = System.Drawing.Color.Transparent;
             this.labelDireccio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F);
             this.labelDireccio.ForeColor = System.Drawing.Color.White;
-            this.labelDireccio.Location = new System.Drawing.Point(113, 224);
-            this.labelDireccio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDireccio.Location = new System.Drawing.Point(151, 276);
             this.labelDireccio.Name = "labelDireccio";
-            this.labelDireccio.Size = new System.Drawing.Size(215, 24);
+            this.labelDireccio.Size = new System.Drawing.Size(273, 29);
             this.labelDireccio.TabIndex = 2;
             this.labelDireccio.Text = "Carrer Fontanter num 14";
             // 
@@ -114,19 +112,20 @@
             this.panelInstalacio.Controls.Add(this.labelStaticDilluns);
             this.panelInstalacio.Controls.Add(this.labelHoraris);
             this.panelInstalacio.Controls.Add(this.labelTipusGestio);
-            this.panelInstalacio.Location = new System.Drawing.Point(10, 67);
-            this.panelInstalacio.Margin = new System.Windows.Forms.Padding(2);
+            this.panelInstalacio.Location = new System.Drawing.Point(13, 82);
+            this.panelInstalacio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelInstalacio.Name = "panelInstalacio";
-            this.panelInstalacio.Size = new System.Drawing.Size(349, 462);
+            this.panelInstalacio.Size = new System.Drawing.Size(465, 569);
             this.panelInstalacio.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 158);
+            this.pictureBox1.Size = new System.Drawing.Size(407, 194);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -137,10 +136,9 @@
             this.labelNom.BackColor = System.Drawing.Color.Transparent;
             this.labelNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Bold);
             this.labelNom.ForeColor = System.Drawing.Color.White;
-            this.labelNom.Location = new System.Drawing.Point(93, 17);
-            this.labelNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNom.Location = new System.Drawing.Point(124, 21);
             this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(186, 29);
+            this.labelNom.Size = new System.Drawing.Size(222, 33);
             this.labelNom.TabIndex = 22;
             this.labelNom.Text = "Nom instalació";
             // 
@@ -150,10 +148,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(157, 424);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(209, 522);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 20);
+            this.label7.Size = new System.Drawing.Size(139, 25);
             this.label7.TabIndex = 19;
             this.label7.Text = "00:00 - 23:59";
             // 
@@ -163,10 +160,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(157, 404);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(209, 497);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 20);
+            this.label6.Size = new System.Drawing.Size(139, 25);
             this.label6.TabIndex = 18;
             this.label6.Text = "00:00 - 23:59";
             // 
@@ -176,10 +172,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(157, 384);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(209, 473);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 20);
+            this.label5.Size = new System.Drawing.Size(139, 25);
             this.label5.TabIndex = 17;
             this.label5.Text = "00:00 - 23:59";
             // 
@@ -189,10 +184,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(157, 363);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(209, 447);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 20);
+            this.label4.Size = new System.Drawing.Size(139, 25);
             this.label4.TabIndex = 16;
             this.label4.Text = "00:00 - 23:59";
             // 
@@ -202,10 +196,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(157, 343);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(209, 422);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
+            this.label3.Size = new System.Drawing.Size(139, 25);
             this.label3.TabIndex = 15;
             this.label3.Text = "00:00 - 23:59";
             // 
@@ -215,10 +208,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(157, 323);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(209, 398);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(139, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "00:00 - 23:59";
             // 
@@ -228,10 +220,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(155, 323);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(207, 398);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.Size = new System.Drawing.Size(139, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "00:00 - 23:59";
             // 
@@ -241,10 +232,9 @@
             this.labelStaticDiumenge.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDiumenge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDiumenge.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDiumenge.Location = new System.Drawing.Point(55, 424);
-            this.labelStaticDiumenge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDiumenge.Location = new System.Drawing.Point(73, 522);
             this.labelStaticDiumenge.Name = "labelStaticDiumenge";
-            this.labelStaticDiumenge.Size = new System.Drawing.Size(85, 20);
+            this.labelStaticDiumenge.Size = new System.Drawing.Size(109, 25);
             this.labelStaticDiumenge.TabIndex = 12;
             this.labelStaticDiumenge.Text = "Diumenge";
             // 
@@ -254,10 +244,9 @@
             this.labelStaticDissabte.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDissabte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDissabte.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDissabte.Location = new System.Drawing.Point(55, 404);
-            this.labelStaticDissabte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDissabte.Location = new System.Drawing.Point(73, 497);
             this.labelStaticDissabte.Name = "labelStaticDissabte";
-            this.labelStaticDissabte.Size = new System.Drawing.Size(76, 20);
+            this.labelStaticDissabte.Size = new System.Drawing.Size(96, 25);
             this.labelStaticDissabte.TabIndex = 11;
             this.labelStaticDissabte.Text = "Dissabte";
             // 
@@ -267,10 +256,9 @@
             this.labelStaticDivendres.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDivendres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDivendres.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDivendres.Location = new System.Drawing.Point(55, 384);
-            this.labelStaticDivendres.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDivendres.Location = new System.Drawing.Point(73, 473);
             this.labelStaticDivendres.Name = "labelStaticDivendres";
-            this.labelStaticDivendres.Size = new System.Drawing.Size(85, 20);
+            this.labelStaticDivendres.Size = new System.Drawing.Size(109, 25);
             this.labelStaticDivendres.TabIndex = 10;
             this.labelStaticDivendres.Text = "Divendres";
             // 
@@ -280,10 +268,9 @@
             this.labelStaticDimecres.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDimecres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDimecres.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDimecres.Location = new System.Drawing.Point(55, 343);
-            this.labelStaticDimecres.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDimecres.Location = new System.Drawing.Point(73, 422);
             this.labelStaticDimecres.Name = "labelStaticDimecres";
-            this.labelStaticDimecres.Size = new System.Drawing.Size(82, 20);
+            this.labelStaticDimecres.Size = new System.Drawing.Size(102, 25);
             this.labelStaticDimecres.TabIndex = 9;
             this.labelStaticDimecres.Text = "Dimecres";
             // 
@@ -293,10 +280,9 @@
             this.labelStaticDijous.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDijous.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDijous.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDijous.Location = new System.Drawing.Point(55, 363);
-            this.labelStaticDijous.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDijous.Location = new System.Drawing.Point(73, 447);
             this.labelStaticDijous.Name = "labelStaticDijous";
-            this.labelStaticDijous.Size = new System.Drawing.Size(57, 20);
+            this.labelStaticDijous.Size = new System.Drawing.Size(72, 25);
             this.labelStaticDijous.TabIndex = 8;
             this.labelStaticDijous.Text = "Dijous";
             // 
@@ -306,10 +292,9 @@
             this.labelStaticDimarts.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDimarts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDimarts.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDimarts.Location = new System.Drawing.Point(55, 323);
-            this.labelStaticDimarts.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDimarts.Location = new System.Drawing.Point(73, 398);
             this.labelStaticDimarts.Name = "labelStaticDimarts";
-            this.labelStaticDimarts.Size = new System.Drawing.Size(69, 20);
+            this.labelStaticDimarts.Size = new System.Drawing.Size(85, 25);
             this.labelStaticDimarts.TabIndex = 7;
             this.labelStaticDimarts.Text = "Dimarts";
             // 
@@ -319,10 +304,9 @@
             this.labelStaticDilluns.BackColor = System.Drawing.Color.Transparent;
             this.labelStaticDilluns.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
             this.labelStaticDilluns.ForeColor = System.Drawing.Color.White;
-            this.labelStaticDilluns.Location = new System.Drawing.Point(55, 303);
-            this.labelStaticDilluns.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStaticDilluns.Location = new System.Drawing.Point(73, 373);
             this.labelStaticDilluns.Name = "labelStaticDilluns";
-            this.labelStaticDilluns.Size = new System.Drawing.Size(61, 20);
+            this.labelStaticDilluns.Size = new System.Drawing.Size(77, 25);
             this.labelStaticDilluns.TabIndex = 6;
             this.labelStaticDilluns.Text = "Dilluns";
             // 
@@ -332,10 +316,9 @@
             this.labelHoraris.BackColor = System.Drawing.Color.Transparent;
             this.labelHoraris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F);
             this.labelHoraris.ForeColor = System.Drawing.Color.White;
-            this.labelHoraris.Location = new System.Drawing.Point(23, 271);
-            this.labelHoraris.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHoraris.Location = new System.Drawing.Point(31, 334);
             this.labelHoraris.Name = "labelHoraris";
-            this.labelHoraris.Size = new System.Drawing.Size(75, 24);
+            this.labelHoraris.Size = new System.Drawing.Size(97, 29);
             this.labelHoraris.TabIndex = 5;
             this.labelHoraris.Text = "Horaris:";
             // 
@@ -345,10 +328,9 @@
             this.labelTipusGestio.BackColor = System.Drawing.Color.Transparent;
             this.labelTipusGestio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F);
             this.labelTipusGestio.ForeColor = System.Drawing.Color.White;
-            this.labelTipusGestio.Location = new System.Drawing.Point(23, 247);
-            this.labelTipusGestio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTipusGestio.Location = new System.Drawing.Point(31, 304);
             this.labelTipusGestio.Name = "labelTipusGestio";
-            this.labelTipusGestio.Size = new System.Drawing.Size(144, 24);
+            this.labelTipusGestio.Size = new System.Drawing.Size(186, 29);
             this.labelTipusGestio.TabIndex = 4;
             this.labelTipusGestio.Text = "Tipus de gestió:";
             // 
@@ -358,10 +340,9 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(383, 15);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(511, 18);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 29);
+            this.label8.Size = new System.Drawing.Size(118, 33);
             this.label8.TabIndex = 20;
             this.label8.Text = "Espais:";
             // 
@@ -391,9 +372,10 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridVieweEntitats.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVieweEntitats.GridColor = System.Drawing.Color.White;
-            this.dataGridVieweEntitats.Location = new System.Drawing.Point(388, 67);
+            this.dataGridVieweEntitats.Location = new System.Drawing.Point(517, 82);
+            this.dataGridVieweEntitats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridVieweEntitats.Name = "dataGridVieweEntitats";
-            this.dataGridVieweEntitats.Size = new System.Drawing.Size(343, 358);
+            this.dataGridVieweEntitats.Size = new System.Drawing.Size(457, 441);
             this.dataGridVieweEntitats.TabIndex = 21;
             // 
             // ColumnNom
@@ -423,10 +405,10 @@
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
-            this.buttonCancelar.Location = new System.Drawing.Point(388, 459);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
+            this.buttonCancelar.Location = new System.Drawing.Point(517, 565);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(157, 41);
+            this.buttonCancelar.Size = new System.Drawing.Size(209, 50);
             this.buttonCancelar.TabIndex = 63;
             this.buttonCancelar.Text = "Cancel·lar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
@@ -439,13 +421,14 @@
             this.buttonDesar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonDesar.ForeColor = System.Drawing.Color.White;
-            this.buttonDesar.Location = new System.Drawing.Point(574, 459);
-            this.buttonDesar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
+            this.buttonDesar.Location = new System.Drawing.Point(765, 565);
+            this.buttonDesar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonDesar.Name = "buttonDesar";
-            this.buttonDesar.Size = new System.Drawing.Size(157, 41);
+            this.buttonDesar.Size = new System.Drawing.Size(209, 50);
             this.buttonDesar.TabIndex = 62;
             this.buttonDesar.Text = "Desar";
             this.buttonDesar.UseVisualStyleBackColor = false;
+            this.buttonDesar.Click += new System.EventHandler(this.buttonDesar_Click);
             // 
             // buttonEditar
             // 
@@ -456,17 +439,17 @@
             this.buttonEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.17F);
             this.buttonEditar.ForeColor = System.Drawing.Color.White;
             this.buttonEditar.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditar.Image")));
-            this.buttonEditar.Location = new System.Drawing.Point(236, 41);
-            this.buttonEditar.Margin = new System.Windows.Forms.Padding(2, 41, 2, 2);
+            this.buttonEditar.Location = new System.Drawing.Point(315, 50);
+            this.buttonEditar.Margin = new System.Windows.Forms.Padding(3, 50, 3, 2);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(123, 33);
+            this.buttonEditar.Size = new System.Drawing.Size(164, 41);
             this.buttonEditar.TabIndex = 64;
             this.buttonEditar.Text = " ";
             this.buttonEditar.UseVisualStyleBackColor = false;
             // 
             // InstallacionsEspaisControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
             this.Controls.Add(this.buttonEditar);
@@ -475,9 +458,9 @@
             this.Controls.Add(this.dataGridVieweEntitats);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panelInstalacio);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "InstallacionsEspaisControl";
-            this.Size = new System.Drawing.Size(734, 570);
+            this.Size = new System.Drawing.Size(979, 702);
             this.Load += new System.EventHandler(this.InstallacionsEspaisControl_Load);
             this.panelInstalacio.ResumeLayout(false);
             this.panelInstalacio.PerformLayout();

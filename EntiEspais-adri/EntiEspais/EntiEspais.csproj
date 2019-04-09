@@ -56,8 +56,19 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,12 +80,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Proyecto\AsignacioSollicitudsControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ActivitatsConcedides.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
-    <Compile Include="Proyecto\AsignacioSollicitudsControl.Designer.cs">
-      <DependentUpon>AsignacioSollicitudsControl.cs</DependentUpon>
+    <Compile Include="ActivitatsDemanades.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
+    <Compile Include="Categoria.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriaEdat.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Competicio.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dia.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Durada.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntiEspais.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntiEspais.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntiEspais.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntiEspais.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entitat.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Equip.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Espai.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Esport.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Horari.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Horari_activitat.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Horari_ActivitatDemanda.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Horari_Instal_lacio.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Instal_lacio.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\BaseDatos\Actividades.cs" />
+    <Compile Include="Proyecto\BaseDatos\BD.cs" />
+    <Compile Include="Proyecto\BaseDatos\Entidades.cs" />
+    <Compile Include="Proyecto\BaseDatos\Instalaciones.cs" />
     <Compile Include="Proyecto\IniciarSesion\IniciarSesio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,9 +251,15 @@
     <Compile Include="Proyecto\SollicitudsControl.Designer.cs">
       <DependentUpon>SollicitudsControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proyecto\AsignacioSollicitudsControl.resx">
-      <DependentUpon>AsignacioSollicitudsControl.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Sexe.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Telefon.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuaris.cs">
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Proyecto\IniciarSesion\IniciarSesio.resx">
       <DependentUpon>IniciarSesio.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +321,38 @@
     <EmbeddedResource Include="Proyecto\SollicitudsControl.resx">
       <DependentUpon>SollicitudsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="EntiEspais.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntiEspais.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EntiEspais.edmx.diagram">
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ActivitatsConcedides.datasource" />
+    <None Include="Properties\DataSources\ActivitatsDemanades.datasource" />
+    <None Include="Properties\DataSources\AjudaControl.datasource" />
+    <None Include="Properties\DataSources\Categoria.datasource" />
+    <None Include="Properties\DataSources\CategoriaEdat.datasource" />
+    <None Include="Properties\DataSources\Competicio.datasource" />
+    <None Include="Properties\DataSources\Dia.datasource" />
+    <None Include="Properties\DataSources\Durada.datasource" />
+    <None Include="Properties\DataSources\EntiEspaisEntities.datasource" />
+    <None Include="Properties\DataSources\Entitat.datasource" />
+    <None Include="Properties\DataSources\Equip.datasource" />
+    <None Include="Properties\DataSources\Espai.datasource" />
+    <None Include="Properties\DataSources\Esport.datasource" />
+    <None Include="Properties\DataSources\Horari.datasource" />
+    <None Include="Properties\DataSources\Horari_activitat.datasource" />
+    <None Include="Properties\DataSources\Horari_ActivitatDemanda.datasource" />
+    <None Include="Properties\DataSources\Horari_Instal_lacio.datasource" />
+    <None Include="Properties\DataSources\IniciarSesio.datasource" />
+    <None Include="Properties\DataSources\Instal_lacio.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Registre.datasource" />
+    <None Include="Properties\DataSources\Sexe.datasource" />
+    <None Include="Properties\DataSources\Telefon.datasource" />
+    <None Include="Properties\DataSources\Usuaris.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -266,6 +376,16 @@
     <None Include="Resources\minimizar.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EntiEspais.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
+      <LastGenOutput>EntiEspais.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntiEspais.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
+      <LastGenOutput>EntiEspais.cs</LastGenOutput>
+    </Content>
     <Content Include="logo.ico" />
     <None Include="Resources\hide.png" />
     <Content Include="Resources\logo.png" />
@@ -285,7 +405,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Proyecto\agregarSolicitud\" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
