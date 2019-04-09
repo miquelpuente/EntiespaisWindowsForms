@@ -57,10 +57,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -79,68 +81,72 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivitatsConcedides.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="ActivitatsDemanades.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="CategoriaEdat.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Competicio.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Dia.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Durada.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntiEspais.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntiEspais.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntiEspais.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntiEspais.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entitat.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Equip.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Espai.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Esport.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Horari.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Horari_activitat.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Horari_ActivitatDemanda.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Horari_Instal_lacio.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Instal_lacio.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelEntiespais.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelEntiespais.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelEntiespais.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelEntiespais.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelEntiespais.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Proyecto\BaseDatos\Actividades.cs" />
+    <Compile Include="Proyecto\BaseDatos\BD.cs" />
+    <Compile Include="Proyecto\BaseDatos\Entidades.cs" />
+    <Compile Include="Proyecto\BaseDatos\Instalaciones.cs" />
     <Compile Include="Proyecto\IniciarSesion\IniciarSesio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,13 +252,13 @@
       <DependentUpon>SollicitudsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Sexe.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Telefon.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuaris.cs">
-      <DependentUpon>ModelEntiespais.tt</DependentUpon>
+      <DependentUpon>EntiEspais.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Proyecto\IniciarSesion\IniciarSesio.resx">
       <DependentUpon>IniciarSesio.cs</DependentUpon>
@@ -315,12 +321,12 @@
     <EmbeddedResource Include="Proyecto\SollicitudsControl.resx">
       <DependentUpon>SollicitudsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="ModelEntiespais.edmx">
+    <EntityDeploy Include="EntiEspais.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelEntiespais.Designer.cs</LastGenOutput>
+      <LastGenOutput>EntiEspais.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelEntiespais.edmx.diagram">
-      <DependentUpon>ModelEntiespais.edmx</DependentUpon>
+    <None Include="EntiEspais.edmx.diagram">
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ActivitatsConcedides.datasource" />
@@ -331,7 +337,7 @@
     <None Include="Properties\DataSources\Competicio.datasource" />
     <None Include="Properties\DataSources\Dia.datasource" />
     <None Include="Properties\DataSources\Durada.datasource" />
-    <None Include="Properties\DataSources\EntiEspaisEntities1.datasource" />
+    <None Include="Properties\DataSources\EntiEspaisEntities.datasource" />
     <None Include="Properties\DataSources\Entitat.datasource" />
     <None Include="Properties\DataSources\Equip.datasource" />
     <None Include="Properties\DataSources\Espai.datasource" />
@@ -370,18 +376,18 @@
     <None Include="Resources\minimizar.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EntiEspais.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
+      <LastGenOutput>EntiEspais.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntiEspais.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntiEspais.edmx</DependentUpon>
+      <LastGenOutput>EntiEspais.cs</LastGenOutput>
+    </Content>
     <Content Include="logo.ico" />
     <None Include="Resources\hide.png" />
-    <Content Include="ModelEntiespais.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelEntiespais.edmx</DependentUpon>
-      <LastGenOutput>ModelEntiespais.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelEntiespais.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelEntiespais.edmx</DependentUpon>
-      <LastGenOutput>ModelEntiespais.cs</LastGenOutput>
-    </Content>
     <Content Include="Resources\logo.png" />
     <None Include="Resources\ojo.png" />
     <None Include="Resources\logo1.png" />

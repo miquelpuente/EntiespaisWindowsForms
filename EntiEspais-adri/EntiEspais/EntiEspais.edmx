@@ -1167,7 +1167,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="EntiEspaisEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="EntiEspaisEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ActivitatsConcedides" EntityType="Self.ActivitatsConcedides" />
           <EntitySet Name="ActivitatsDemanades" EntityType="Self.ActivitatsDemanades" />
           <EntitySet Name="Categoria" EntityType="Self.Categoria" />
@@ -1297,7 +1297,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="EntiEspaisModelStoreContainer" CdmEntityContainer="EntiEspaisEntities1">
+        <EntityContainerMapping StorageEntityContainer="EntiEspaisModelStoreContainer" CdmEntityContainer="EntiEspaisEntities">
           <EntitySetMapping Name="ActivitatsConcedides">
             <EntityTypeMapping TypeName="EntiEspaisModel.ActivitatsConcedides">
               <MappingFragment StoreEntitySet="ActivitatsConcedides">

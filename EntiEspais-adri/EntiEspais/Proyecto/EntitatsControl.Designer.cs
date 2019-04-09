@@ -28,22 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntitatsControl));
             this.dataGridVieweEntitats = new System.Windows.Forms.DataGridView();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNomEntitat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNIF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxBuscador = new System.Windows.Forms.TextBox();
             this.buttonIniciarSessio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.temporadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrasenyaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceEntidad = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEntidad)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridVieweEntitats
             // 
+            this.dataGridVieweEntitats.AutoGenerateColumns = false;
             this.dataGridVieweEntitats.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(142)))), ((int)(((byte)(164)))));
             this.dataGridVieweEntitats.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -56,9 +62,12 @@
             this.dataGridVieweEntitats.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridVieweEntitats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridVieweEntitats.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnID,
-            this.ColumnNomEntitat,
-            this.ColumnNIF});
+            this.nomDataGridViewTextBoxColumn,
+            this.temporadaDataGridViewTextBoxColumn,
+            this.nIFDataGridViewTextBoxColumn,
+            this.correuDataGridViewTextBoxColumn,
+            this.contrasenyaDataGridViewTextBoxColumn});
+            this.dataGridVieweEntitats.DataSource = this.bindingSourceEntidad;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(142)))), ((int)(((byte)(164)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -68,30 +77,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridVieweEntitats.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVieweEntitats.GridColor = System.Drawing.Color.White;
-            this.dataGridVieweEntitats.Location = new System.Drawing.Point(68, 118);
+            this.dataGridVieweEntitats.Location = new System.Drawing.Point(62, 125);
             this.dataGridVieweEntitats.Name = "dataGridVieweEntitats";
-            this.dataGridVieweEntitats.Size = new System.Drawing.Size(542, 224);
+            this.dataGridVieweEntitats.Size = new System.Drawing.Size(570, 224);
             this.dataGridVieweEntitats.TabIndex = 3;
             this.dataGridVieweEntitats.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVieweEntitats_CellContentClick);
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.HeaderText = "ID";
-            this.ColumnID.MinimumWidth = 6;
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.Width = 150;
-            // 
-            // ColumnNomEntitat
-            // 
-            this.ColumnNomEntitat.HeaderText = "Nom Entitat";
-            this.ColumnNomEntitat.Name = "ColumnNomEntitat";
-            this.ColumnNomEntitat.Width = 200;
-            // 
-            // ColumnNIF
-            // 
-            this.ColumnNIF.HeaderText = "NIF";
-            this.ColumnNIF.Name = "ColumnNIF";
-            this.ColumnNIF.Width = 150;
             // 
             // textBoxBuscador
             // 
@@ -127,11 +117,45 @@
             // 
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(155, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(126, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "nom";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            // 
+            // temporadaDataGridViewTextBoxColumn
+            // 
+            this.temporadaDataGridViewTextBoxColumn.DataPropertyName = "temporada";
+            this.temporadaDataGridViewTextBoxColumn.HeaderText = "temporada";
+            this.temporadaDataGridViewTextBoxColumn.Name = "temporadaDataGridViewTextBoxColumn";
+            // 
+            // nIFDataGridViewTextBoxColumn
+            // 
+            this.nIFDataGridViewTextBoxColumn.DataPropertyName = "NIF";
+            this.nIFDataGridViewTextBoxColumn.HeaderText = "NIF";
+            this.nIFDataGridViewTextBoxColumn.Name = "nIFDataGridViewTextBoxColumn";
+            // 
+            // correuDataGridViewTextBoxColumn
+            // 
+            this.correuDataGridViewTextBoxColumn.DataPropertyName = "correu";
+            this.correuDataGridViewTextBoxColumn.HeaderText = "correu";
+            this.correuDataGridViewTextBoxColumn.Name = "correuDataGridViewTextBoxColumn";
+            // 
+            // contrasenyaDataGridViewTextBoxColumn
+            // 
+            this.contrasenyaDataGridViewTextBoxColumn.DataPropertyName = "contrasenya";
+            this.contrasenyaDataGridViewTextBoxColumn.HeaderText = "contrasenya";
+            this.contrasenyaDataGridViewTextBoxColumn.Name = "contrasenyaDataGridViewTextBoxColumn";
+            // 
+            // bindingSourceEntidad
+            // 
+            this.bindingSourceEntidad.DataSource = typeof(EntiEspais.Entitat);
             // 
             // EntitatsControl
             // 
@@ -148,6 +172,7 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.EntitatsControl_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVieweEntitats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEntidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,11 +180,14 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridVieweEntitats;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNomEntitat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNIF;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBoxBuscador;
         private System.Windows.Forms.Button buttonIniciarSessio;
+        private System.Windows.Forms.BindingSource bindingSourceEntidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn temporadaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nIFDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contrasenyaDataGridViewTextBoxColumn;
     }
 }

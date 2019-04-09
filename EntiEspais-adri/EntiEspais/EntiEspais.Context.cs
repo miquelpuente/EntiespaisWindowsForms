@@ -13,10 +13,10 @@ namespace EntiEspais
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class EntiEspaisEntities1 : DbContext
+    public partial class EntiEspaisEntities : DbContext
     {
-        public EntiEspaisEntities1()
-            : base("name=EntiEspaisEntities1")
+        public EntiEspaisEntities()
+            : base("name=EntiEspaisEntities")
         {
         }
     

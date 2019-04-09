@@ -36,6 +36,10 @@ namespace EntiEspais.Plantilla
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.Font = new Font("Roboto", 12, FontStyle.Bold);
         }
-    
+
+        private void buttonDesar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
