@@ -124,7 +124,6 @@
             this.Name = "PerfilControl";
             this.Size = new System.Drawing.Size(900, 702);
             this.Load += new System.EventHandler(this.PerfilControl_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PerfilControl_Paint);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
