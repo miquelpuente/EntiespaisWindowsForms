@@ -42,10 +42,10 @@
             this.buttonMinimizeApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimizeApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMinimizeApp.Image = global::EntiEspais.Properties.Resources.minus;
-            this.buttonMinimizeApp.Location = new System.Drawing.Point(20, 21);
-            this.buttonMinimizeApp.Margin = new System.Windows.Forms.Padding(3, 10, 11, 2);
+            this.buttonMinimizeApp.Location = new System.Drawing.Point(15, 17);
+            this.buttonMinimizeApp.Margin = new System.Windows.Forms.Padding(2, 8, 8, 2);
             this.buttonMinimizeApp.Name = "buttonMinimizeApp";
-            this.buttonMinimizeApp.Size = new System.Drawing.Size(25, 23);
+            this.buttonMinimizeApp.Size = new System.Drawing.Size(19, 19);
             this.buttonMinimizeApp.TabIndex = 3;
             this.buttonMinimizeApp.UseVisualStyleBackColor = true;
             this.buttonMinimizeApp.Click += new System.EventHandler(this.buttonMinimizeApp_Click);
@@ -55,10 +55,10 @@
             this.buttonCloseApp.FlatAppearance.BorderSize = 0;
             this.buttonCloseApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCloseApp.Image = global::EntiEspais.Properties.Resources.multiply;
-            this.buttonCloseApp.Location = new System.Drawing.Point(63, 21);
-            this.buttonCloseApp.Margin = new System.Windows.Forms.Padding(3, 10, 11, 2);
+            this.buttonCloseApp.Location = new System.Drawing.Point(47, 17);
+            this.buttonCloseApp.Margin = new System.Windows.Forms.Padding(2, 8, 8, 2);
             this.buttonCloseApp.Name = "buttonCloseApp";
-            this.buttonCloseApp.Size = new System.Drawing.Size(25, 23);
+            this.buttonCloseApp.Size = new System.Drawing.Size(19, 19);
             this.buttonCloseApp.TabIndex = 4;
             this.buttonCloseApp.UseVisualStyleBackColor = true;
             this.buttonCloseApp.Click += new System.EventHandler(this.buttonCloseApp_Click);
@@ -68,22 +68,20 @@
             this.panel1.Controls.Add(this.buttonMinimizeApp);
             this.panel1.Controls.Add(this.buttonCloseApp);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1124, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(843, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(111, 739);
+            this.panel1.Size = new System.Drawing.Size(83, 539);
             this.panel1.TabIndex = 5;
             // 
             // Plantilla
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(222)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(1235, 739);
+            this.ClientSize = new System.Drawing.Size(926, 539);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Plantilla";
             this.Text = "Plantilla";
             this.Load += new System.EventHandler(this.Plantilla_Load);

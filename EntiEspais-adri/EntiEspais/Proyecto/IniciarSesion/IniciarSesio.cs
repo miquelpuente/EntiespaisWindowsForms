@@ -173,11 +173,7 @@ namespace EntiEspais
                     if(textBoxContrasenya.Text != contrasenya && textBoxContrasenya.Text != "")
                     {
                         // if(textBoxContrassenya.Text == BASE DE DATOS && textBoxEmail.Text == BASE DE DATOS)
-                        // Abrimos formulario
-                        Plantilla.Perfil a = new Plantilla.Perfil();
-                        a.Show();
-
-                        this.Hide();
+                        // Entrar a la app
 
                         // else
                         // MessageBox usuari o pw no vàlids

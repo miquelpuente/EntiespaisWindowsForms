@@ -15,6 +15,25 @@ namespace EntiEspais.Plantilla
         public InstallacionsControl()
         {
             InitializeComponent();
+
+            // Datos provisionales
+            dataGridViewInstalacions.Rows.Add();
+            dataGridViewInstalacions.Rows[0].Cells[0].Value = "Instalacio 1";
+            dataGridViewInstalacions.Rows[0].Cells[1].Value = "Carrer Llacuna num 2";
+
+            dataGridViewInstalacions.Rows.Add();
+            dataGridViewInstalacions.Rows[1].Cells[0].Value = "Instalacio 2";
+            dataGridViewInstalacions.Rows[1].Cells[1].Value = "Carrer Marina numero 12";
+
+            dataGridViewInstalacions.Rows.Add();
+            dataGridViewInstalacions.Rows[2].Cells[0].Value = "Instalacio 3";
+            dataGridViewInstalacions.Rows[2].Cells[1].Value = "Carrer Murcia numero 12";
+
+            dataGridViewInstalacions.Rows.Add();
+            dataGridViewInstalacions.Rows[3].Cells[0].Value = "Instalacio 4";
+            dataGridViewInstalacions.Rows[3].Cells[1].Value = "Carrer Cinca numero 12";
+
+            
         }
 
         private void buttonAfegir_Click(object sender, EventArgs e)
@@ -26,7 +45,7 @@ namespace EntiEspais.Plantilla
 
         private void InstallacionsControl_Load(object sender, EventArgs e)
         {
-            dataGridViewInstalacions.DataSource = Proyecto.BaseDatos.Instalaciones.selectAllInstalaciones();
+            
         }
       }
 }

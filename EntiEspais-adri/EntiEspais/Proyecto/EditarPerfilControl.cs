@@ -27,7 +27,7 @@ namespace EntiEspais.Plantilla
             this.textBoxNom.BackColor = this.BackColor;
             this.textBoxCognoms.BackColor = this.BackColor;
             this.textBoxDNI.BackColor = this.BackColor;
-            this.textBoxEmail.BackColor = this.BackColor;
+            this.textBoxAdreça.BackColor = this.BackColor;
             this.textBoxContrasenya.BackColor = this.BackColor;
             this.textBoxRepetirContrasenya.BackColor = this.BackColor;
 
@@ -38,7 +38,7 @@ namespace EntiEspais.Plantilla
 
             textBoxDNI.Text = dni;
 
-            textBoxEmail.Text = email;
+            textBoxAdreça.Text = email;
 
             textBoxContrasenya.Text = contrasenya;
 
@@ -77,8 +77,8 @@ namespace EntiEspais.Plantilla
             g.DrawRectangle(p, rectTextBoxDNI);
 
             //textbox  email
-            textBoxEmail.BorderStyle = BorderStyle.None;
-            Rectangle rectTextBoxAdreça = new Rectangle(textBoxEmail.Location.X - variance / 2, textBoxEmail.Location.Y - variance / 2, textBoxEmail.Width + variance, textBoxEmail.Height + variance);
+            textBoxAdreça.BorderStyle = BorderStyle.None;
+            Rectangle rectTextBoxAdreça = new Rectangle(textBoxAdreça.Location.X - variance / 2, textBoxAdreça.Location.Y - variance / 2, textBoxAdreça.Width + variance, textBoxAdreça.Height + variance);
             g.DrawRectangle(p, rectTextBoxAdreça);
 
             //textbox  contrasenya 
@@ -158,18 +158,18 @@ namespace EntiEspais.Plantilla
         private void textBoxAdreça_MouseClick(object sender, MouseEventArgs e)
         {
             // Cuándo se hace clik en el textbox y esta el texto por defecto se borra el texto
-            if (textBoxEmail.Text == email)
+            if (textBoxAdreça.Text == email)
             {
-                textBoxEmail.Text = "";
+                textBoxAdreça.Text = "";
             }
         }
 
         private void textBoxAdreça_Leave(object sender, EventArgs e)
         {
             // si no esta en el textbox de nom, vuelve a tener texto
-            if (textBoxEmail.Text == "")
+            if (textBoxAdreça.Text == "")
             {
-                textBoxEmail.Text = email;
+                textBoxAdreça.Text = email;
             }
         }
         //textbox  contrasenya
@@ -279,54 +279,7 @@ namespace EntiEspais.Plantilla
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            // si hay cambios pendientes se pide confirmación al usuario
-            if (canvis())
-            {
-                DialogResult resultado;
-
-                resultado = MessageBox.Show("Estas segur de voler tancar el formulari sense guardar?", "Hi ha canvis pendents!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-
-                // Si el usuario ha confirmado que quiere salir cerramos el formulario
-                if (resultado == System.Windows.Forms.DialogResult.Yes)
-                {
-                    this.Hide();
-                }
-            }
-            // Si no hay cambios se cierra el control
-            else
-            {
-                this.Hide();
-            }
-            
-        }
-
-        private bool canvis()
-        {
-            // verificamos si se ha cambiado algún textbox
-            if (!(textBoxNom.Text.Equals(nom)))
-            {
-                return true;
-            }
-            if (!(textBoxCognoms.Text.Equals(cognoms))){
-                return true;
-            }
-            if (!(textBoxDNI.Text.Equals(dni)))
-            {
-                return true;
-            }
-            if (!(textBoxEmail.Text.Equals(email))){
-                return true;
-            }
-            if (!(textBoxContrasenya.Text.Equals(contrasenya)))
-            {
-                return true;
-            }
-            if (!(textBoxRepetirContrasenya.Text.Equals(repetirCon)))
-            {
-                return true;
-            }
-            // si no se ha cambiado ninguno devolvemos false
-            return false;
+            this.Hide();
         }
     }
 }

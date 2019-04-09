@@ -253,29 +253,19 @@ namespace EntiEspais.Plantilla
                 textBoxContrasenya.UseSystemPasswordChar = false;
             }
         }
-        
+
+       
+
+        private void textBoxID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             EditarPerfilControl a = new EditarPerfilControl();
             this.Controls.Add(a);
             a.BringToFront();
-        }
-
-        private void buttonCerrarSesion_Click(object sender, EventArgs e)
-        {
-            DialogResult result;
-            //preguntamos si desea cerrar sesión
-            result = MessageBox.Show("Desitges tancar sessió?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == System.Windows.Forms.DialogResult.Yes)
-            {
-                // Cerramos la sesion
-                Plantilla.ActiveForm.Close();
-
-                IniciarSesio a = new IniciarSesio();
-                a.Show();
-            }
         }
     }
 }

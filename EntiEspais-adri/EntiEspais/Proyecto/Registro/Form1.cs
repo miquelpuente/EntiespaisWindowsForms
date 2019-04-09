@@ -261,12 +261,10 @@ namespace EntiEspais
                                 if (textBoxContrasenya.Text == textBoxRepetirContrasenya.Text)
                                 {
                                     /*
-                                     * Agregar el usuario a la BD
+                                     * 
+                                     * AÑADIR FUNCIÓN PARA ABIR EL SIGUIENTE FORMULARIO
+                                     * 
                                      */
-                                    Plantilla.Perfil a = new Plantilla.Perfil();
-                                    a.Show();
-
-                                    this.Hide();
                                 }
                                 else
                                 {
@@ -308,8 +306,8 @@ namespace EntiEspais
         private void buttonIniciarSessio_Click(object sender, EventArgs e)
         {
             // Obrim el formulari
-           IniciarSesio a = new IniciarSesio();
-           a.Show();
+           // IniciarSesio a = new IniciarSesio();
+           // a.Show();
 
             // Amaguem el formulari
             this.Hide();

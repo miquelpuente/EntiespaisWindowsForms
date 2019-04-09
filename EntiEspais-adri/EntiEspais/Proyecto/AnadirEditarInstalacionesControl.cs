@@ -15,28 +15,37 @@ namespace EntiEspais.Plantilla
         public AnadirEditarInstalacionesControl()
         {
             InitializeComponent();
-
             
         }
 
+        private void comboBoxHoraMatiIniciDilluns_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-
-
-            DialogResult result;
-            //preguntamos si desea cancelar los cambios que ha realizado en el formulario editar
-            result = MessageBox.Show("Desitges cancel·lar els canvis?", "Alerta", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-            if (result == System.Windows.Forms.DialogResult.Yes)
-            {
-                // Cerramos el formulario y volvemos al formulario anterior
-
-                this.Parent.Controls.Remove(this);
-            }
+            this.Hide();
         }
 
-        
+        private void AnadirEditarInstalacionesControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxDireccio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxGestio_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

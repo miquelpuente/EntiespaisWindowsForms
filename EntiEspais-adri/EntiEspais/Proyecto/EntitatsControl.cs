@@ -35,7 +35,7 @@ namespace EntiEspais.Plantilla
             int variance = 8;
             // TextBox buscador
             textBoxBuscador.BorderStyle = BorderStyle.None;
-            Rectangle rectTextBoxBuscador = new Rectangle((textBoxBuscador.Location.X - variance) / 2, textBoxBuscador.Location.Y - variance / 2, textBoxBuscador.Width + variance + (pictureBox1.Width *2), textBoxBuscador.Height + variance);
+            Rectangle rectTextBoxBuscador = new Rectangle(textBoxBuscador.Location.X - variance / 2, textBoxBuscador.Location.Y - variance / 2, textBoxBuscador.Width + variance, textBoxBuscador.Height + variance);
             g.DrawRectangle(p, rectTextBoxBuscador);
 
         }
@@ -84,10 +84,6 @@ namespace EntiEspais.Plantilla
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 113);
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridVieweEntitats.ColumnHeadersDefaultCellStyle.Font = new Font ("Roboto", 12, FontStyle.Bold);
-
-            //Bindeado de datos 
-
-            dataGridVieweEntitats.DataSource = Proyecto.BaseDatos.Entidades.selectAllEntidades();
         }
 
         private void dataGridVieweEntitats_CellContentClick(object sender, DataGridViewCellEventArgs e)

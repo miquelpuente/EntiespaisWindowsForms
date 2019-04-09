@@ -86,7 +86,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EntiEspais.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(346, 95);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.pictureBox1.Name = "pictureBox1";
