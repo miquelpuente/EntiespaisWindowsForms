@@ -20,13 +20,13 @@ namespace EntiEspais.Proyecto.BaseDatos
         }
 
         /// <summary>
-        /// Borramos  y contralamos un posible error pasando este mismo para poder saber de que exception de SQL se trata.
+        /// Borramos y contralamos un posible error pasando este mismo para poder saber de que exception de SQL se trata.
         /// </summary>
         /// <param name="hotel"></param>
         /// <returns></returns>
-        public static String deleteInstalacion(Instal_lacio instal)
+        public static String deleteInstalacion(Instal_lacio instal_)
         {
-            BD.bd.Instal_lacio.Remove(instal);
+            BD.bd.Instal_lacio.Remove(instal_);
             mensaje = BD.SaveChanges();
             return mensaje;
         }

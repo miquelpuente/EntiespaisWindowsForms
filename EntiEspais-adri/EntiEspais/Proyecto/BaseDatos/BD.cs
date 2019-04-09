@@ -21,6 +21,8 @@ namespace EntiEspais.Proyecto
         public static void cargarEntidades(BindingSource binding) {
             binding.DataSource = BaseDatos.Entidades.selectAllEntidades();
         }
+
+
         /// <summary>
         /// Método el cuál nos ayuda a conocer nuestra Excepción con un mensaje, esto nos obliga a que nuestros métodos que no devolvian nada 
         /// ahora devuelvan un String con el mensaje correspondiente a la Excepción.

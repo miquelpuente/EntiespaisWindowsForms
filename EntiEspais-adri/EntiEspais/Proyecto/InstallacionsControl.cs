@@ -31,15 +31,15 @@ namespace EntiEspais.Plantilla
 
         private void dataGridViewInstalacions_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
         {
+
             String mensaje = " ";
             try
             {
-                DialogResult result = MessageBox.Show("Estas seguro de que quieres borrar la isntalación seleccionada?", "BORRAR", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                DialogResult result = MessageBox.Show("Estas seguro de que quieres borrar la instalación?", "BORRAR", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (result == DialogResult.Yes)
                 {
                     mensaje = Proyecto.BaseDatos.Instalaciones.deleteInstalacion((Instal_lacio)dataGridViewInstalacions.SelectedRows[0].DataBoundItem);
-
 
                     if (!mensaje.Equals(""))
                     {
