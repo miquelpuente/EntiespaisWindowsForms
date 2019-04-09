@@ -19,6 +19,5 @@ namespace EntiEspais.Proyecto
         public static void cargarEntidades(BindingSource binding) {
             binding.DataSource = BaseDatos.Entidades.selectAllEntidades();
         }
-        
     }
 }

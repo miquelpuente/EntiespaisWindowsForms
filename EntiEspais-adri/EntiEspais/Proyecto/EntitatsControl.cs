@@ -87,7 +87,7 @@ namespace EntiEspais.Plantilla
 
             //Bindeado de datos 
 
-            dataGridVieweEntitats.DataSource = Proyecto.BaseDatos.Entidades.selectAllEntidades();
+            //dataGridVieweEntitats.DataSource = Proyecto.BaseDatos.Entidades.selectAllEntidades();
         }
 
         private void dataGridVieweEntitats_CellContentClick(object sender, DataGridViewCellEventArgs e)

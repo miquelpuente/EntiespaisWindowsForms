@@ -101,6 +101,7 @@
             this.buttonMinimizeApp.FlatAppearance.BorderSize = 0;
             this.buttonMinimizeApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimizeApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMinimizeApp.Image = global::EntiEspais.Properties.Resources.minimizar;
             this.buttonMinimizeApp.Location = new System.Drawing.Point(767, 19);
             this.buttonMinimizeApp.Margin = new System.Windows.Forms.Padding(3, 10, 10, 3);
             this.buttonMinimizeApp.Name = "buttonMinimizeApp";
@@ -113,6 +114,7 @@
             // 
             this.buttonCloseApp.FlatAppearance.BorderSize = 0;
             this.buttonCloseApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCloseApp.Image = global::EntiEspais.Properties.Resources.multiply;
             this.buttonCloseApp.Location = new System.Drawing.Point(805, 19);
             this.buttonCloseApp.Margin = new System.Windows.Forms.Padding(3, 10, 10, 3);
             this.buttonCloseApp.Name = "buttonCloseApp";

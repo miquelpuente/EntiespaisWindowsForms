@@ -26,7 +26,7 @@ namespace EntiEspais.Plantilla
 
         private void InstallacionsControl_Load(object sender, EventArgs e)
         {
-            dataGridViewInstalacions.DataSource = Proyecto.BaseDatos.Instalaciones.selectAllInstalaciones();
+           // dataGridViewInstalacions.DataSource = Proyecto.BaseDatos.Instalaciones.selectAllInstalaciones();
         }
       }
 }
