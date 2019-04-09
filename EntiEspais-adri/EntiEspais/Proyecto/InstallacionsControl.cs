@@ -28,5 +28,36 @@ namespace EntiEspais.Plantilla
         {
            // dataGridViewInstalacions.DataSource = Proyecto.BaseDatos.Instalaciones.selectAllInstalaciones();
         }
-      }
+
+        private void dataGridViewInstalacions_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+
+            String mensaje = " ";
+            try
+            {
+                DialogResult result = MessageBox.Show("Estas seguro de que quieres borrar la instalación?", "BORRAR", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (result == DialogResult.Yes)
+                {
+                    mensaje = Proyecto.BaseDatos.Instalaciones.deleteInstalacion((Instal_lacio)dataGridViewInstalacions.SelectedRows[0].DataBoundItem);
+
+                    if (!mensaje.Equals(""))
+                    {
+                        MessageBox.Show(mensaje, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        e.Cancel = true;
+                    }
+                }
+                else
+                {
+                    e.Cancel = true; //Al cancelar evitamos que se quite el elemento de la gridView.
+                    MessageBox.Show("", "Se ha cancelado correctamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+        }
+    }
 }
