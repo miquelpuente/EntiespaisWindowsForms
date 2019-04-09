@@ -30,6 +30,5 @@ namespace EntiEspais.Proyecto.BaseDatos
             mensaje = BD.SaveChanges();
             return mensaje;
         }
-
     }
 }
