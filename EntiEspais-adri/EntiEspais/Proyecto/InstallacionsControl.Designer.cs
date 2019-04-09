@@ -84,6 +84,7 @@
             this.dataGridViewInstalacions.Name = "dataGridViewInstalacions";
             this.dataGridViewInstalacions.Size = new System.Drawing.Size(353, 343);
             this.dataGridViewInstalacions.TabIndex = 3;
+            this.dataGridViewInstalacions.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataGridViewInstalacions_UserDeletingRow);
             // 
             // nomDataGridViewTextBoxColumn
             // 
